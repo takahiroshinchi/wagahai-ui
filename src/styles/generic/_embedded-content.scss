@@ -1,0 +1,24 @@
+/* ---------------------------------- *\
+   #EMBEDDED-CONTENT
+\* ---------------------------------- */
+
+// 要素の下にできる隙間を消す
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+// 親要素からはみ出ないようにする
+img {
+  max-width: 100%;
+}
+
+audio {
+  &:not([controls]) {
+    display: none;
+  }
+}

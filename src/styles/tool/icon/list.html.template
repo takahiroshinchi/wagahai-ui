@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <title><%= fontName %></title>
+        <style>
+            body { font-family: Gill Sans; text-align: center; background: #f7f7f7 }
+            body > h1 { color: #666; margin: 1em 0 }
+            .glyph { padding: 0 }
+            .glyph > li { display: inline-block; margin: .3em .2em; width: 5em; height: 8.5em; background: #fff; border-radius: .5em; position: relative }
+            .glyph > li span:first-child { display: block; margin-top: .1em; font-size: 1em; }
+            .glyph-name { font-size: .8em; color: #999; display: block }
+            .glyph-unicode { color: #999; font-family: monospace }
+            .glyph-html-unicode { display: block; font-size: 24px; color: #333 }
+
+            @font-face {
+                font-family: '<%= fontName %>';
+                src: url('../../../../root/mutable/fonts/<%= fontName %>.woff2') format('woff2'),
+                  url('../../../../root/mutable/fonts/<%= fontName %>.woff') format('woff'),
+                  url('../../../../root/mutable/fonts/<%= fontName %>.ttf') format('truetype');
+            }
+
+            .test {
+                display: inline-block;
+                font-family: "<%= fontName %>";
+                vertical-align: middle;
+                text-decoration: inherit;
+                text-transform: none;
+                font-weight: normal;
+                font-style: normal;
+                font-variant: normal;
+                line-height: 1;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+                speak: none;
+                color: #333;
+            }
+
+            <% _.each(glyphs, function(glyph) { %>.test-<%= glyph.name %>:before { content: "\<%= glyph.unicode %>" }
+            <% }); %>
+
+            </style>
+        </head>
+        <body>
+            <h1><%= fontName %></h1>
+            <ul class="glyph"><% _.each(glyphs, function(glyph) { %>
+                <li>
+                    <span class="test test-<%= glyph.name %>"></span>
+                    <span class="glyph-name"><%= glyph.name %></span>
+                    <span class="glyph-unicode"><%= glyph.unicode %></span>
+                    <span class="glyph-html-unicode test">&#x<%= glyph.unicode %></span>
+                </li><% }); %>
+            </ul>
+        </body>
+</html>

@@ -1,0 +1,59 @@
+/* ---------------------------------- *\
+   #FORM
+\* ---------------------------------- */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  margin: 0;
+  font: inherit;
+}
+
+button {
+  appearance: button;
+  cursor: pointer;
+
+  &[disabled] {
+    cursor: default;
+  }
+}
+
+input {
+
+  html & {
+    &[disabled] {
+      cursor: default;
+    }
+  }
+
+  &[type="button"],
+  &[type="reset"],
+  &[type="submit"] {
+    appearance: button;
+    cursor: pointer;
+  }
+
+  &[type="search"] {
+    appearance: textfield;
+
+    &::-webkit-search-cancel-button,
+    &::-webkit-search-decoration {
+      appearance: none;
+    }
+  }
+
+  &[type="file"] {
+    &::-webkit-file-upload-button {
+      font: inherit;
+      appearance: button;
+    }
+  }
+}
+
+fieldset {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}

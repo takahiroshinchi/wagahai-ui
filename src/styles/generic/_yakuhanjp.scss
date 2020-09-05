@@ -1,0 +1,26 @@
+///* ---------------------------------- *\
+//   YakuHanJP
+//\* ---------------------------------- */
+
+/// フォントファイルのパス
+/// @group generic
+/// @type String
+// $auone-search-tool-icon-font-path: '../fonts/' !default;
+
+/*! Yaku Han JP v3.1.0 (OFL-1.1 AND MIT) by Qrac */
+/*! Type: YakuHanJP - Based on Noto Sans CJK JP */
+@font-face {
+  font-family: "YakuHanJP";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./YakuHanJP/YakuHanJP-Regular.eot");
+  src: url("./YakuHanJP/YakuHanJP-Regular.woff2") format("woff2"), url("./YakuHanJP/YakuHanJP-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "YakuHanJP";
+  font-style: normal;
+  font-weight: 700;
+  src: url("./YakuHanJP/YakuHanJP-Bold.eot");
+  src: url("./YakuHanJP/YakuHanJP-Bold.woff2") format("woff2"), url("./YakuHanJP/YakuHanJP-Bold.woff") format("woff");
+}

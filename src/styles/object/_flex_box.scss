@@ -1,0 +1,76 @@
+/* ---------------------------------- *\
+   #FLEX-BOX
+\* ---------------------------------- */
+
+/// 余白サイズ
+/// @group object-flex-box
+/// @type Number
+/// @see $setting-default-spacing
+$object-flex-box-spacing: $setting-default-spacing !default;
+
+.u-FlexBox {
+  display: flex;
+
+  // Element
+  &__item {
+    display: block;
+    min-width: 1%;
+
+    &--fill {
+      flex: 1;
+    }
+
+    &.u-FlexBox {
+      display: flex;
+    }
+  }
+
+  // Modifier
+  &--center {
+    justify-content: center;
+  }
+
+  &--left {
+    justify-content: flex-start;
+  }
+
+  &--right {
+    justify-content: flex-end;
+  }
+
+  &--justify {
+    justify-content: space-between;
+  }
+
+  &--top {
+    align-items: flex-start;
+  }
+
+  &--middle {
+    align-items: center;
+  }
+
+  &--bottom {
+    align-items: flex-end;
+  }
+
+  &--reverse {
+    flex-direction: row-reverse;
+  }
+
+  &--equal {
+    > .u-FlexBox__item {
+      flex: 1;
+    }
+  }
+
+  &--withGutter {
+    margin-right: (- .5 * $object-flex-box-spacing);
+    margin-left: (- .5 * $object-flex-box-spacing);
+
+    > .u-FlexBox__item {
+      padding-right: (.5 * $object-flex-box-spacing);
+      padding-left: (.5 * $object-flex-box-spacing);
+    }
+  }
+}

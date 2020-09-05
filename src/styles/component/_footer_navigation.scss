@@ -1,0 +1,39 @@
+/* ---------------------------------- *\
+   #FooterNavigation
+\* ---------------------------------- */
+
+.c-FooterNavigation {
+   position: fixed;
+   bottom: 0;
+   left: 0;
+   width: 100%;
+
+   &__inner {
+      border-top: 1px solid #eee;
+      background: #fff;
+      text-align: center;
+   }
+
+   &__items {
+
+   }
+
+   &__item {
+      width: 25%;
+
+      &Body {
+         display: block;
+         padding: 24px;
+      }
+
+      .fa {
+         display: block;
+      }
+
+      span {
+         margin-top: 5px;
+         font-size: 10px;
+         white-space: nowrap;
+      }
+   }
+}

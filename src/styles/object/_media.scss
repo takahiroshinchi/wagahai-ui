@@ -1,0 +1,107 @@
+/* ---------------------------------- *\
+   #MEDIA
+\* ---------------------------------- */
+
+/// 余白サイズ
+/// @group object-media
+/// @type Number
+$component-media-padding: 10px !default;
+
+.u-Media {
+
+  // // Element
+  // &__body {
+  //   display: flex;
+  //   flex-direction: column;
+  //   padding: $component-media-padding;
+  // }
+
+  // copyguard
+  &--cover {
+    position: relative;
+    user-select: none;
+
+    .u-Media__image {
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: block;
+      width: 100%;
+      height: 100%;
+      user-select: none;
+      z-index: 1;
+    }
+  }
+
+  // &__image {}
+
+  // &__image + .Media__main {
+  //   padding-top: ($component-media-padding / 2);
+  // }
+
+  // &__main {
+  //   padding-top: ($component-media-padding / 2);
+  //   padding-bottom: ($component-media-padding / 2);
+  //   flex: 1;
+  //   overflow: hidden;
+  // }
+
+  // Modifier
+  // &--vertical {}
+
+  // &--horizontal {
+  //   > .u-Media__body {
+  //     flex-direction: row;
+  //   }
+
+  //   > .u-Media__body > .u-Media__image + .u-Media__main {
+  //     padding-top: ($component-media-padding / 2);
+  //     padding-left: $component-media-padding;
+  //   }
+
+  //   > .u-Media__body > .u-Media__main + .u-Media__image {
+  //     padding-top: 0;
+  //     padding-left: $component-media-padding;
+  //   }
+  // }
+
+  // &--middle {
+  //   > .u-Media__body {
+  //     justify-content: center;
+  //     align-items: center;
+  //   }
+  // }
+
+  // &--reverse {
+  //   > .u-Media__body {
+  //     flex-direction: column-reverse;
+  //   }
+
+  //   > .u-Media__body > .u-Media__image + .u-Media__main {
+  //     padding-top: ($component-media-padding / 2);
+  //     padding-bottom: ($component-media-padding / 2);
+  //   }
+
+  //   > .u-Media__body > .u-Media__main + .u-Media__image {
+  //     padding-bottom: ($component-media-padding / 2);
+  //   }
+
+  //   &.u-Media--horizontal {
+  //     > .u-Media__body {
+  //       flex-direction: row-reverse;
+  //     }
+
+  //     > .u-Media__body > .u-Media__image + .u-Media__main {
+  //       padding-right: $component-media-padding;
+  //       padding-bottom: ($component-media-padding / 2);
+  //       padding-left: 0;
+  //     }
+
+  //     > .u-Media__body > .u-Media__main + .u-Media__image {
+  //       padding-right: $component-media-padding;
+  //       padding-bottom: 0;
+  //       padding-left: 0;
+  //     }
+  //   }
+  // }
+}

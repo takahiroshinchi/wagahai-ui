@@ -1,0 +1,55 @@
+<% if (typeof display === 'undefined') { var display = 'default'; } -%>
+<% if (typeof count === 'undefined') { var count = 3; } -%>
+<% if (typeof title === 'undefined') { var title = 'タイトル'; } -%>
+<% if (typeof type === 'undefined') { var type = 'default'; } -%>
+<% if (typeof rout === 'undefined') { var rout = 'default' } -%>
+<%
+var items = {
+  "dummy":[
+  {"title":"タイトルの辞典テキスト表示1行","description":"「単語１」「単語２」「単語３」「単語４」「単語５」「単語単語単語」","link":"javascript:;","thumbnail":"https://picsum.photos/80/80/?random"},
+]};
+var n = items.dummy.length;
+while(n < count){
+  items.dummy.push({"title":"タイトルの辞典テキスト表示2行まで表示するコンテンツ名テキスト表示","description":"「単語１」「単語２」「単語３」「単語４」「単語５」「単語単語単語」表示2行まで表示する","link":"javascript:;","thumbnail":"https://picsum.photos/seed/picsum/80/80"});
+  n++;
+}
+-%>
+<section class="sph-Result sph-Result--dictionary">
+<div class="sph-Result__inner">
+  <div class="sph-Result__header u-FlexBox u-FlexBox--middle">
+    <h2 class="sph-Result__headerTitle u-FlexBox__item--fill"><%- title %></h2>
+    <% if (type === 'list') { -%>
+    <select name="sort" class="sph-Result__option">
+      <option value="1" selected>おすすめ順</option>
+      <option value="2">更新順</option>
+      <option value="3">いいね順</option>
+      <option value="4">50音順</option>
+    </select>
+    <% } -%>
+  </div><!-- /sph-Result__header -->
+
+  <div class="sph-Result__body">
+    <div class="sph-Result__items">
+      <% items["dummy"].forEach(function(data){ -%>
+      <section class="sph-Result__item">
+        <a href="<%= data.link %>" class="sph-Result__itemInner u-FlexBox">
+          <p class="sph-Result__itemTmb">
+            <span class="u-FlexImage u-FlexImage--1by1">
+              <img src="<%= data.thumbnail %>" class="u-FlexImage__image u-FlexImage__image--img" alt="" loading="lazy">
+            </span>
+          </p>
+          <div class="sph-Result__itemDetail u-FlexBox__item--fill">
+            <h3 class="sph-Result__itemTitle"><span class="u-TextEllipsis2line"><%= data.title %></span></h3>
+            <p class="sph-Result__itemDescription"><span class="u-TextEllipsis2line"><%= data.description %></span></p>
+          </div><!-- /sph-Result__itemDetail -->
+        </a><!-- /sph-Result__itemInner -->
+      </section><!-- /sph-Result__item -->
+      <% }); -%>
+    </div><!-- /sph-Result__items -->
+  </div><!-- /sph-Result__body -->
+
+  <div class="sph-Result__footer u-FlexBox u-FlexBox--middle u-FlexBox--right">
+    <a class="sph-Result__link" href="javascript:;">もっとみる</a>
+  </div><!-- /sph-Result__footer -->
+</div><!-- /sph-Result__inner -->
+</section><!-- /sph-Result -->

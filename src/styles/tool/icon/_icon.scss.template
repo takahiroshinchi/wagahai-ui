@@ -1,0 +1,69 @@
+///* ---------------------------------- *\
+//   ICON
+//\* ---------------------------------- */
+
+/// フォントファイルのパス
+/// @group tool.icon
+/// @type String
+$auone-search-tool-icon-font-path: '<%= fontPath %>' !default;
+
+///
+/// フォント名（SVGファイル名）からユニコードを返す
+/// @group tool.icon
+/// @param {String} $filename - フォント名（SVGファイル名）
+/// @returns {String} - 対応するフォントのユニコード
+///
+@function auone-search-icon-char($filename) {
+  $char: '';
+<% _.each(glyphs, function(glyph) { %>
+  @if $filename == <%= glyph.name %> {
+    $char: '\<%= glyph.unicode %>';
+  }<%; }); %>
+
+  @return $char;
+}
+
+///
+/// アイコンフォントのフォントフェイス
+/// @group tool.icon
+/// @param {String} $font-path ($auone-search-tool-icon-font-path) - フォントファイルのパス
+/// @see $auone-search-tool-icon-font-path
+///
+@mixin auone-search-icon-font-face($font-path: $auone-search-tool-icon-font-path) {
+  @font-face {
+    font-family: '<%= fontName %>';
+    src: url('#{$font-path}<%= fontName %>.woff2') format('woff2'),
+      url('#{$font-path}<%= fontName %>.woff') format('woff'),
+      url('#{$font-path}<%= fontName %>.ttf') format('truetype');
+  }
+}
+
+///
+/// アイコンフォントのベーススタイル
+/// @group tool.icon
+///
+@mixin auone-search-icon-style {
+  text-decoration: inherit;
+  text-transform: none;
+  font-weight: normal;
+  font-style: normal;
+  font-variant: normal;
+  font-family: '<%= fontName %>';
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  vertical-align: middle;
+  speak: none;
+}
+
+///
+/// 指定したフォント名に対応するユニコードを'content'プロパティに設定する
+/// @group tool.icon
+/// @param {String} $filename - フォント名（SVGファイル名）
+/// @param {String} $insert (before) - 擬似要素の指定（'before' or 'after'）
+///
+@mixin auone-search-icon-content($filename, $insert: before) {
+  &::#{$insert} {
+    content: auone-search-icon-char($filename);
+  }
+}

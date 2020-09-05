@@ -1,0 +1,69 @@
+<%- include('setting/_setting', {}); %>
+<!DOCTYPE html>
+<html lang="ja">
+<%- include('component/_header', {display:'default', type: 'default', version: 'default'}); %>
+<body>
+
+<section class="c-Contents">
+<div class="c-Contents__inner">
+<div class="c-Contents__header u-FlexBox u-FlexBox--middle">
+  <a class="btn-back" href="javascript:;">
+    <i aria-hidden="true" class="fa fa-lg fa-angle-left"></i>
+    <span>戻る</span>
+  </a>
+  <h1 class="c-Contents__headerTitle u-FlexBox__item--fill">
+    単語編集
+  </h1>
+</div><!-- /c-Contents__header -->
+
+<div class="c-Contents__body">
+  <%- include('module/_word', {title: 'ユーザー名', type: 'default'}); %>
+
+  <div class="c-Input">
+    <div class="c-Input__inner">
+    <div class="c-Input__group">
+      <div class="c-Input__label">
+        <label for="wordID"><span>単語名を入力</span></label>
+      </div>
+      <input type="text" name="word" class="c-Input__control" id="wordID" value="">
+    </div><!-- /c-Input__group -->
+    
+    <div class="c-Input__group">
+      <div class="c-Input__label">
+        <label for="spellID"><span>読みを入力</span></label>
+      </div>
+      <input type="text" name="spell" class="c-Input__control" id="spellID" value="">
+    </div><!-- /c-Input__group -->
+
+    <div class="c-Input__group">
+      <div class="c-Input__label">
+        <span>辞書選択</span>
+      </div>
+      <div class="c-Input__checkbox" id="categoriesID">
+        <label><input type="checkbox" name="categories" value="1" checked>カテゴリ1</label>
+        <label><input type="checkbox" name="categories" value="2">カテゴリ2</label>
+        <label><input type="checkbox" name="categories" value="3">カテゴリ3</label>
+      </div>
+    </div><!-- /c-Input__group -->
+
+    <div class="c-Input__group">
+      <div class="c-Input__label">
+        <label for="explainID"><span>単語説明入力</span></label>
+      </div>
+      <textarea name="explain" class="c-Input__control" id="explainID" rows="50" cols="40"></textarea>
+    </div><!-- /c-Input__group -->
+
+    <div class="c-Input__group">
+      <input type="file" accept=".jpg,.gif,.png,image/gif,image/jpeg,image/png">
+    </div><!-- /c-Input__group -->
+
+    </div><!-- /c-Input__inner -->
+    </div><!-- /c-Input -->
+</div><!-- /c-Contents__body -->
+
+</div><!-- /c-Contents__inner -->
+</section><!-- /c-Contents -->
+
+<%- include('component/_footer', {display:'default', type: 'default', service: 'default'}); %>
+</body>
+</html>

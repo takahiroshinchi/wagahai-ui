@@ -1,0 +1,270 @@
+%icon-style {
+  @include auone-search-icon-style;
+}
+
+@include auone-search-icon-font-face;
+.icon-f {
+  &::before {
+    display: inline-block;
+    content: '';
+    @extend %icon-style;
+  }
+
+  &__reply {
+    &:before {
+      content: auone-search-icon-char('reply');
+    }
+  }
+
+  &__retweet {
+    &:before {
+      content: auone-search-icon-char('retweet');
+    }
+  }
+
+  &__like {
+    &:before {
+      content: auone-search-icon-char('like');
+    }
+  }
+
+  &__twitter {
+    &:before {
+      content: auone-search-icon-char('twitter');
+    }
+  }
+
+  &__loading {
+    &:before {
+      content: auone-search-icon-char('loading');
+    }
+  }
+
+  &__back {
+    &:before {
+      content: auone-search-icon-char('back');
+    }
+  }
+
+  &__prev {
+    &:before {
+      content: auone-search-icon-char('prev');
+    }
+  }
+
+  &__next {
+    &:before {
+      content: auone-search-icon-char('next');
+    }
+  }
+
+  &--top {
+    &:before {
+      content: auone-search-icon-char('top');
+    }
+  }
+
+  &__crown {
+    &:before {
+      content: auone-search-icon-char('crown');
+    }
+  }
+
+  &__rise {
+    &:before {
+      content: auone-search-icon-char('rise');
+    }
+  }
+
+  &__au {
+    &:before {
+      content: auone-search-icon-char('au');
+    }
+  }
+
+  &__masthead {
+    &:before {
+      content: auone-search-icon-char('masthead');
+    }
+  }
+
+  &--home {
+    &:before {
+      content: auone-search-icon-char('home');
+    }
+  }
+
+  &--user1 {
+    &:before {
+      content: auone-search-icon-char('user1');
+    }
+  }
+
+  &--user2 {
+    &:before {
+      content: auone-search-icon-char('user2');
+    }
+  }
+
+  &--plus {
+    &:before {
+      content: auone-search-icon-char('plus');
+    }
+  }
+
+  &--check {
+    &:before {
+      content: auone-search-icon-char('check');
+    }
+  }
+
+  &--info {
+    &:before {
+      content: auone-search-icon-char('info');
+    }
+  }
+
+  &--close {
+    &:before {
+      content: auone-search-icon-char('close');
+    }
+  }
+
+  &--help {
+    &:before {
+      content: auone-search-icon-char('help');
+    }
+  }
+
+  &--search {
+    &:before {
+      content: auone-search-icon-char('search');
+    }
+  }
+
+  &--location {
+    &:before {
+      content: auone-search-icon-char('location');
+    }
+  }
+
+  &--star_r0 {
+    &:before {
+      content: auone-search-icon-char('star_r0');
+    }
+  }
+
+  &--star_r1 {
+    &:before {
+      content: auone-search-icon-char('star_r1');
+    }
+  }
+
+  &--star_p5 {
+    &:before {
+      content: auone-search-icon-char('star_p5');
+    }
+  }
+
+  &--time {
+    &:before {
+      content: auone-search-icon-char('time');
+    }
+  }
+
+  &--phone {
+    &:before {
+      content: auone-search-icon-char('phone');
+    }
+  }
+
+  &--balloon {
+    &:before {
+      content: auone-search-icon-char('balloon');
+    }
+  }
+
+  &--fire {
+    &:before {
+      content: auone-search-icon-char('fire');
+    }
+  }
+
+  &--up {
+    &:before {
+      content: auone-search-icon-char('up');
+    }
+  }
+
+  &--down {
+    &:before {
+      content: auone-search-icon-char('down');
+    }
+  }
+
+  &--left {
+    &:before {
+      content: auone-search-icon-char('left');
+    }
+  }
+
+  &--right {
+    &:before {
+      content: auone-search-icon-char('right');
+    }
+  }
+
+  &--en {
+    &:before {
+      content: auone-search-icon-char('en');
+    }
+  }
+
+  &--ic {
+    &:before {
+      content: auone-search-icon-char('ic');
+    }
+  }
+
+  &--arrow-up {
+    &:before {
+      content: auone-search-icon-char('arrow-up');
+    }
+  }
+
+  &--arrow-down {
+    &:before {
+      content: auone-search-icon-char('arrow-down');
+    }
+  }
+
+  &--arrow-left {
+    &:before {
+      content: auone-search-icon-char('arrow-left');
+    }
+  }
+
+  &--arrow-right {
+    &:before {
+      content: auone-search-icon-char('arrow-right');
+    }
+  }
+
+  &--window {
+    &:before {
+      content: auone-search-icon-char('window');
+    }
+  }
+
+  &--love {
+    &:before {
+      content: auone-search-icon-char('love');
+    }
+  }
+
+  &--money {
+    &:before {
+      content: auone-search-icon-char('money');
+    }
+  }
+}

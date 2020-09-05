@@ -1,0 +1,12 @@
+/* ---------------------------------- *\
+   #LINKS
+\* ---------------------------------- */
+
+a {
+  color: $setting-default-link-text-color;
+  text-decoration: none;
+
+  // &:visited {
+  //   color: $setting-default-visited-link-text-color;
+  // }
+}

@@ -1,0 +1,49 @@
+{
+  "name": "wagahai-ui",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "css": "gulp css",
+    "html": "gulp html",
+    "build": "gulp css && gulp script",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:takahiroshinchi/wagahai-ui.git"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.7.6",
+    "browser-sync": "^2.26.12",
+    "del": "^5.0.0",
+    "gulp": "^4.0.2",
+    "gulp-dart-sass": "^0.9.1",
+    "gulp-ejs": "^5.1.0",
+    "gulp-iconfont": "^8.0.1",
+    "gulp-image-resize": "^0.13.1",
+    "gulp-imagemin": "^3.1.1",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-notify": "^2.2.0",
+    "gulp-plumber": "^0.6.6",
+    "gulp-postcss": "^8.0.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-replace": "^0.5.4",
+    "gulp-sass-glob": "^1.0.8",
+    "gulp-size": "^2.1.0",
+    "imagemin-pngquant": "^5.0.0",
+    "require-dir": "^0.3.0"
+  },
+  "path": {
+    "script": "./src/scripts/",
+    "scss": "./src/styles/",
+    "html": "./src/html/",
+    "image": "./src/images/"
+  },
+  "browserslist": [
+    "iOS >= 10",
+    "Android >= 4"
+  ],
+  "dependencies": {
+  }
+}

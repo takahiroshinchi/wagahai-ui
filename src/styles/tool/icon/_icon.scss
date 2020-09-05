@@ -1,0 +1,198 @@
+///* ---------------------------------- *\
+//   ICON
+//\* ---------------------------------- */
+
+/// フォントファイルのパス
+/// @group tool.icon
+/// @type String
+$auone-search-tool-icon-font-path: '../fonts/' !default;
+
+///
+/// フォント名（SVGファイル名）からユニコードを返す
+/// @group tool.icon
+/// @param {String} $filename - フォント名（SVGファイル名）
+/// @returns {String} - 対応するフォントのユニコード
+///
+@function auone-search-icon-char($filename) {
+  $char: '';
+
+  @if $filename == reply {
+    $char: '\E600';
+  }
+  @if $filename == retweet {
+    $char: '\E601';
+  }
+  @if $filename == relike {
+    $char: '\E602';
+  }
+  @if $filename == like {
+    $char: '\E603';
+  }
+  @if $filename == twitter {
+    $char: '\E604';
+  }
+  @if $filename == loading {
+    $char: '\E605';
+  }
+  @if $filename == back {
+    $char: '\E606';
+  }
+  @if $filename == prev {
+    $char: '\E607';
+  }
+  @if $filename == next {
+    $char: '\E608';
+  }
+  @if $filename == top {
+    $char: '\E609';
+  }
+  @if $filename == crown {
+    $char: '\E60A';
+  }
+  @if $filename == rise {
+    $char: '\E60B';
+  }
+  @if $filename == au {
+    $char: '\E60C';
+  }
+  @if $filename == masthead {
+    $char: '\E60D';
+  }
+  @if $filename == home {
+    $char: '\E60E';
+  }
+  @if $filename == user1 {
+    $char: '\E60F';
+  }
+  @if $filename == user2 {
+    $char: '\E610';
+  }
+  @if $filename == plus {
+    $char: '\E611';
+  }
+  @if $filename == check {
+    $char: '\E612';
+  }
+  @if $filename == info {
+    $char: '\E613';
+  }
+  @if $filename == close {
+    $char: '\E614';
+  }
+  @if $filename == help {
+    $char: '\E615';
+  }
+  @if $filename == search {
+    $char: '\E616';
+  }
+  @if $filename == location {
+    $char: '\E617';
+  }
+  @if $filename == star_r0 {
+    $char: '\E618';
+  }
+  @if $filename == star_r1 {
+    $char: '\E619';
+  }
+  @if $filename == star_p5 {
+    $char: '\E61A';
+  }
+  @if $filename == time {
+    $char: '\E61B';
+  }
+  @if $filename == phone {
+    $char: '\E61C';
+  }
+  @if $filename == balloon {
+    $char: '\E61D';
+  }
+  @if $filename == fire {
+    $char: '\E61E';
+  }
+  @if $filename == up {
+    $char: '\E61F';
+  }
+  @if $filename == down {
+    $char: '\E620';
+  }
+  @if $filename == left {
+    $char: '\E621';
+  }
+  @if $filename == right {
+    $char: '\E622';
+  }
+  @if $filename == en {
+    $char: '\E623';
+  }
+  @if $filename == ic {
+    $char: '\E624';
+  }
+  @if $filename == arrow-up {
+    $char: '\E625';
+  }
+  @if $filename == arrow-down {
+    $char: '\E626';
+  }
+  @if $filename == arrow-left {
+    $char: '\E627';
+  }
+  @if $filename == arrow-right {
+    $char: '\E628';
+  }
+  @if $filename == window {
+    $char: '\E629';
+  }
+  @if $filename == love {
+    $char: '\E62A';
+  }
+  @if $filename == money {
+    $char: '\E62B';
+  }
+
+  @return $char;
+}
+
+///
+/// アイコンフォントのフォントフェイス
+/// @group tool.icon
+/// @param {String} $font-path ($auone-search-tool-icon-font-path) - フォントファイルのパス
+/// @see $auone-search-tool-icon-font-path
+///
+@mixin auone-search-icon-font-face($font-path: $auone-search-tool-icon-font-path) {
+  @font-face {
+    font-family: 'auone-search-icon-font_1.0.3';
+    src: url('#{$font-path}auone-search-icon-font_1.0.3.woff2') format('woff2'),
+      url('#{$font-path}auone-search-icon-font_1.0.3.woff') format('woff'),
+      url('#{$font-path}auone-search-icon-font_1.0.3.ttf') format('truetype');
+  }
+}
+
+///
+/// アイコンフォントのベーススタイル
+/// @group tool.icon
+///
+@mixin auone-search-icon-style {
+  text-decoration: inherit;
+  text-transform: none;
+  font-weight: normal;
+  font-style: normal;
+  font-variant: normal;
+  font-family: 'auone-search-icon-font_1.0.3';
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  vertical-align: middle;
+  speak: none;
+}
+
+///
+/// 指定したフォント名に対応するユニコードを'content'プロパティに設定する
+/// @group tool.icon
+/// @param {String} $filename - フォント名（SVGファイル名）
+/// @param {String} $insert (before) - 擬似要素の指定（'before' or 'after'）
+///
+@mixin auone-search-icon-content($filename, $insert: before) {
+  &::#{$insert} {
+    content: auone-search-icon-char($filename);
+  }
+}

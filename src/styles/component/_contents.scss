@@ -1,0 +1,59 @@
+/* ---------------------------------- *\
+   #Contents
+\* ---------------------------------- */
+
+.c-Contents {
+
+   &__inner {
+      padding: 0;
+      background: #fff;
+   }
+
+   &__header {
+      position: sticky;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      height: 48px;
+      top: 0;
+      left: 0;
+      z-index: 2;
+      background: #fff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
+
+      &Title {
+         text-align: center;
+         font-size: 16px;
+         font-weight: 700;
+      }
+
+      span {
+         margin-left: 5px;
+         font-weight: 700;
+      }
+
+      .btn-offcanvas {
+         display: block;
+         padding: 10px;
+      }
+
+      .btn-setting {
+         display: block;
+         padding: 10px;
+      }
+
+      .btn-back {
+         position: absolute;
+         display: block;
+         top: 50%;
+         left: 10px;
+         margin-top: -.5em;
+      }
+   }
+
+   &__body {
+   }
+
+   &__footer {
+   }
+}

@@ -1,0 +1,15 @@
+<% if (typeof display === 'undefined') { var display = 'default'; } -%>
+<% if (typeof type === 'undefined') { var type = 'default'; } -%>
+<% if (typeof service === 'undefined') { var service = 'default'; } -%>
+<% if (typeof version === 'undefined') { var version = 'default'; } -%>
+<% if (version == 'default'){ -%>
+<head>
+<meta charset="utf-8">
+<title></title>
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="format-detection" content="telephone=no">
+<link rel="stylesheet" type="text/css" href="<%= Pass -%>styles/common.css">
+<link rel="stylesheet" href="<%= Pass -%>styles/font-awesome-4.7.0/css/font-awesome.min.css">
+</head>
+<% } -%>

@@ -1,0 +1,79 @@
+/* ---------------------------------- *\
+   #TEXT
+\* ---------------------------------- */
+
+%utility-text-ellipsis-multiline {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  word-wrap: break-word;
+  word-break: break-all;
+  line-height: 1.4;
+}
+
+.u-Text {
+  &Center { text-align: center; }
+  &Left { text-align: left; }
+  &Right { text-align: right; }
+
+  &Break {
+    word-wrap: break-word;
+  }
+
+  &DisableVisited {
+    &:visited {
+      color: currentColor;
+    }
+  }
+
+  &Ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+    &1line {
+      @extend %utility-text-ellipsis-multiline;
+      -webkit-line-clamp: 1;
+      max-height: 1.4em;
+    }
+
+    &2line {
+      @extend %utility-text-ellipsis-multiline;
+      -webkit-line-clamp: 2;
+      max-height: 2.8em;
+    }
+
+    &3line {
+      @extend %utility-text-ellipsis-multiline;
+      -webkit-line-clamp: 3;
+      max-height: 4.2em;
+    }
+
+    &4line {
+      @extend %utility-text-ellipsis-multiline;
+      -webkit-line-clamp: 4;
+      max-height: 5.6em;
+    }
+  }
+
+  // clip: rect(1px, 1px, 1px, 1px) で0pxでの切り抜きを指定
+  // css2+
+  &HiddenVisually {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0;
+    width: 1px;
+    height: 1px;
+    border: 0;
+  }
+
+  &Links {
+    color: #0688C5;
+    text-decoration: none;
+
+    &:visited {
+      color: #0688C5;
+    }
+  }
+}

@@ -1,0 +1,16 @@
+/* ---------------------------------- *\
+   #ROOT-ELEMENT
+\* ---------------------------------- */
+
+// 1. 最低限、ビューポートの高さ分、ページの高さを確保する
+// 2. スマデバで自動でズームされるのを防ぐ
+:root {
+  min-height: 100%; // 1
+  box-sizing: border-box;
+  background-color: $setting-default-background-color;
+  color: $setting-default-text-color;
+  font-size: $setting-default-global-font-size;
+  font-family: YakuHanJP, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Hiragino Sans", "Segoe UI", sans-serif;
+  line-height: $setting-default-line-height;
+  text-size-adjust: 100%; // 2
+}

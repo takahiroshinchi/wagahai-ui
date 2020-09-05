@@ -1,0 +1,65 @@
+///* ---------------------------------- *\
+//   #FLEX-IMAGE
+//\* ---------------------------------- */
+
+.u-FlexImage {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  padding-bottom: 100%;
+
+  // Element
+  &__image {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-position: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    // Modifier
+    &--img {
+      top: 50%;
+      left: 50%;
+      width: initial;
+      height: initial;
+      transform: translate(-50%, -50%);
+
+      // src属性がない、or srcにurl指定がない場合、ノーイメージ画像をimg背景画像として出す
+      &:not([src ^= "http"])  {
+        background-image: url('https://cdn.search.auone.jp/static/web/permanent/img/no_image_100.png');
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    &--limit {
+      top: 50%;
+      left: 50%;
+      max-width: 100%; // 元画像サイズが領域より小さい場合はmax制限削除
+      max-height: 100%; // 元画像サイズが領域より小さい場合はmax制限削除
+      width: initial;
+      height: initial;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  // Modifier
+  &--1by1 { padding-bottom: 100%; }
+  &--2by1 { padding-bottom: (1 / 2 * 100%); }
+  &--4by3 { padding-bottom: (3 / 4 * 100%); }
+  &--3by4 { padding-bottom: (4 / 3 * 100%); }
+  &--16by9 { padding-bottom: (9 / 16 * 100%); }
+  &--14by10 { padding-bottom: (10 / 14 * 100%); }
+  &--10by14 { padding-bottom: (14 / 10 * 100%); }
+  &--2point414by1 { padding-bottom: (1 / 2.414 * 100%); }
+
+  &--noCrop {
+    .u-FlexImage__image {
+      background-size: contain;
+    }
+  }
+}

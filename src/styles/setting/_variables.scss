@@ -1,0 +1,128 @@
+// =============================================================================
+// config
+// =============================================================================
+
+/// リリースバージョン
+/// @group setting-default
+/// @type Number
+$setting-default-release-version: 1.0.0 !default;
+
+/// サービスID
+/// @group setting-default
+/// @type String
+$setting-service-id: sph !default;
+
+// 画像参照パス
+// @group setting-default
+// @type String
+$setting-default-image-path: '../img/' !default;
+
+/// ベースとなるfont-size（px指定）
+/// @group setting-default
+/// @type Number
+$setting-default-global-font-size: 14px !default;
+
+/// remベースとなるfont-size（16px / 62.5%）
+/// @group setting-default
+/// @type Number
+$setting-default-global-rem-size: 10 !default;
+
+/// ベースとなるline-height
+/// @group setting-default
+/// @type Number
+$setting-default-line-height: 1.4 !default;
+
+/// ベースとなるテキスト色
+/// @group setting-default
+/// @type Color
+$setting-default-text-color: #3A3F57 !default;
+
+/// ベースとなるリンク色
+/// @group setting-default
+/// @type Color
+$setting-default-link-text-color: $setting-default-text-color !default;
+
+/// ベースとなる訪問済みのリンク色
+/// @group setting-default
+/// @type Color
+$setting-default-visited-link-text-color: $setting-default-text-color !default;
+
+/// グレー文字色、WCAG 2.0(W3C)基準指針、通常の大きさの文章は、最低でも明度比4.5対１とすることが推奨
+/// @group setting-default
+/// @type Color
+$setting-default-text-color-grey: #767676 !default;
+
+/// グレー文字色、WCAG 2.0(W3C)基準指針、18pt以上の大きさの文章は、最低でも明度58%とすることが推奨
+/// @group setting-default
+/// @type Color
+$setting-default-big-text-color-grey: #949494 !default;
+
+/// ベースとなる余白サイズ
+/// @group setting-default
+/// @type Number
+$setting-default-spacing: 8px !default;
+
+/// ベースとなる初期設定の色
+/// @group setting-default
+/// @type Color
+$setting-default-primary-color: #168eea !default;
+
+/// ベースとなる成功の色
+/// @group setting-default
+/// @type Color
+$setting-default-success-color: #68C934 !default;
+
+/// ベースとなる非活性の色
+/// @group setting-default
+/// @type Color
+$setting-default-disabled-color: #e9edf0 !default;
+
+/// ベースとなるインフォメーションの色
+/// @group setting-default
+/// @type Color
+$setting-default-info-color: #45abcd !default;
+
+/// ベースとなる危険情報の色
+/// @group setting-default
+/// @type Color
+$setting-default-danger-color: #9e170e !default;
+
+/// ベースとなる注意情報の色
+/// @group setting-default
+/// @type Color
+$setting-default-warning-color: #ff9800 !default;
+
+/// ベースとなる現在地を示すの色
+/// @group setting-default
+/// @type Color
+$setting-default-current-color: #4a90e2 !default;
+
+/// ベースとなる背景色
+/// @group setting.default
+/// @type Color
+$setting-default-background-color: #E2E2E2 !default;
+
+/// ベースとなるカードUIの背景色
+/// @group setting-default
+/// @type Color
+$setting-default-card-background-color: #f9f9f9 !default;
+
+/// ベースとなるカードUIの枠線の色
+/// @group setting-default
+/// @type Color
+$setting-default-card-border-color: #ccc !default;
+
+/// ベースとなるカードUIのbox-shadow色
+/// @group setting-default
+/// @type Color
+$setting-default-card-box-shadow-color: rgba(0, 0, 0, .3) !default;
+
+/// ベースとなるカードUIのbox-shadow
+/// @group setting-default
+/// @type String
+$setting-default-card-box-shadow: 0 0 1px $setting-default-card-box-shadow-color !default;
+
+/// ベースとなるカードUIのbox-shadow--soft
+/// @group setting-default
+/// @type String
+$setting-default-card-box-shadow--soft: 0 1px 7px rgba(0, 0, 0, .05) !default;

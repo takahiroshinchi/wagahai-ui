@@ -1,0 +1,49 @@
+<% if (typeof display === 'undefined') { var display = 'default'; } -%>
+<% if (typeof count === 'undefined') { var count = 3; } -%>
+<% if (typeof title === 'undefined') { var title = 'タイトル'; } -%>
+<% if (typeof type === 'undefined') { var type = 'default'; } -%>
+<% if (typeof rout === 'undefined') { var rout = 'default' } -%>
+<%
+var items = {
+  "dummy":[
+  {"title":"コンテンツ名テキスト表示1行","description":"コンテンツの説明文表示1行","link":"javascript:;","thumbnail":"https://picsum.photos/136/75/?random"},
+]};
+var n = items.dummy.length;
+while(n < count){
+  items.dummy.push({"title":"コンテンツ名テキスト表示2行まで表示するコンテンツ名テキスト表示","description":"コンテンツの説明文表示2行まで表示する","link":"javascript:;","thumbnail":"https://picsum.photos/seed/picsum/136/75"});
+  n++;
+}
+-%>
+<section class="sph-Result">
+<div class="sph-Result__inner">
+  <div class="sph-Result__header">
+    <h2 class="sph-Result__headerTitle"><%- title %></h2>
+  </div><!-- /sph-Result__header -->
+
+  <div class="sph-Result__body">
+    <div class="sph-Result__items">
+      <% items["dummy"].forEach(function(data){ -%>
+      <section class="sph-Result__item">
+        <a href="<%= data.link %>" class="sph-Result__itemInner u-FlexBox">
+          <p class="sph-Result__itemTmb">
+            <span class="u-FlexImage u-FlexImage--16by9">
+              <img src="<%= data.thumbnail %>" class="u-FlexImage__image u-FlexImage__image--img" alt="" loading="lazy">
+            </span>
+          </p>
+          <div class="sph-Result__itemDetail u-FlexBox__item--fill">
+            <h3 class="sph-Result__itemTitle"><span class="u-TextEllipsis2line"><%= data.title %></span></h3>
+            <p class="sph-Result__itemDescription"><span class="u-TextEllipsis2line"><%= data.description %></span></p>
+            <p class="sph-Result__itemText"><span class="u-TextEllipsis2line"><%= data.description %></span></p>
+            <p class="sph-Result__itemSubText"><span class="u-TextEllipsis1line">サイト名等</span></p>
+          </div><!-- /sph-Result__itemDetail -->
+        </a><!-- /sph-Result__itemInner -->
+      </section><!-- /sph-Result__item -->
+      <% }); -%>
+    </div><!-- /sph-Result__items -->
+  </div><!-- /sph-Result__body -->
+
+  <div class="sph-Result__footer u-FlexBox u-FlexBox--middle u-FlexBox--right">
+    <a class="sph-Result__link" href="javascript:;">もっとみる</a>
+  </div><!-- /sph-Result__footer -->
+</div><!-- /sph-Result__inner -->
+</section><!-- /sph-Result -->

@@ -1,0 +1,40 @@
+<% if (typeof display === 'undefined') { var display = 'default'; } -%>
+<% if (typeof title === 'undefined') { var title = 'ユーザー名'; } -%>
+<% if (typeof type === 'undefined') { var type = 'default'; } -%>
+<% if (typeof rout === 'undefined') { var rout = 'default' } -%>
+<section class="sph-Word">
+<div class="sph-Word__inner">
+  <div class="sph-Word__header u-FlexBox u-FlexBox--middle">
+    <a href="javascript:;" class="sph-Word__user">
+      <span class="u-FlexImage u-FlexImage--1by1">
+        <img src="https://picsum.photos/80/80/?random" class="u-FlexImage__image u-FlexImage__image--img" alt="" loading="lazy">
+      </span>
+    </a><!-- /sph-Result__user -->
+    <h2 class="sph-Word__headerTitle u-FlexBox__item--fill"><%- title %></h2>
+    <% if (type === 'detail') { -%>
+      <% if (rout === 'default') { -%>
+      <a class="sph-Word__button" href="javascript:;">編集</a>
+      <% } -%>
+    <% } else { -%>
+    <a class="sph-Word__button" href="javascript:;">保存</a>
+    <% } -%>
+  </div><!-- /sph-Word__header -->
+
+  <% if (type === 'detail') { -%>
+    <div class="sph-Word__body">
+      <p class="sph-Word__title">【連続テレビドラマ/れんぞくてれびどらま】</p>
+      <dl class="sph-Word__category">
+        <dt>辞典</dt>
+        <dd>ホゲホゲホゲ</dd>
+        <dd>aaaaaaaaaaa</dd>
+        <dd>oooooo</dd>
+      </dl>
+      <p class="sph-Word__text">
+        <img class="sph-Word__image" src="https://picsum.photos/150/150/?random" alt="" loading="lazy">
+        かきくけこ、さしすせそ、はまやらわ、かきくけこ、さしすせそ、はまやらわ、かきくけこ、さしすせそ、はまやらわ、かきくけこ、さしすせそ、はまやらわ、かきくけこ、さしすせそ、はまやらわ、かきくけこ、さしすせそ、はまやらわ、かきくけこ、さしすせそ、はまやらわ、かきくけかきくけこ、さしすせそ、はまやらわ、かきくけこ、さしすせそ、はまやらわ、かきくけこ、さしすせそ、はまやらわ、かきくけこ、さしすせそ、はまやらわ、かきくけこ、さしすせそ、はまやらわ、かきくけこ、さしすせそ、はまやらわ、かきくけこ、さしすせそ、はまやらわ、かきくけ
+      </p>
+    </div><!-- /sph-Word__body -->
+  <% } -%>
+
+</div><!-- /sph-Word__inner -->
+</section><!-- /sph-Word -->

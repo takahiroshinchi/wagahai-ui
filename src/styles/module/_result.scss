@@ -1,0 +1,147 @@
+/* ---------------------------------- *\
+   #Result
+\* ---------------------------------- */
+
+//----------------------------------------------------
+//  import
+//----------------------------------------------------
+
+// ----------------------------------------------------
+// 変数
+// ----------------------------------------------------
+.#{$setting-service-id}-Result {
+  &__inner {
+    padding-top: 20px;
+  }
+
+  &__header {
+    position: relative;
+    padding-left: 8px;
+    padding-right: 8px;
+
+    &--border {
+      padding: 15px 10px;
+      border-bottom: 1px solid #ccc;
+   }
+
+    &Title {
+      font-weight: 700;
+    }
+
+    .favorite {
+      position: absolute;
+      right: 10px;
+      bottom: -10px;
+
+      background: #fff;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+
+      .fa {
+        font-size: 14px;
+      }
+    }
+  }
+
+  &__option {
+  }
+
+  &__body {
+  }
+
+  &__users {
+    padding: 10px;
+    overflow: hidden;
+  }
+
+  &__user {
+    float: left;
+    margin-right: 10px;
+    width: 40px;
+
+    img {
+      border-radius: 50%;
+    }
+  }
+
+  &__items {
+  }
+
+  &__item {
+    margin: 8px 0 0;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #E2E2E2;
+
+    &:first-child {
+      margin: 0;
+    }
+
+    &Inner {
+      // margin: -8px;
+      padding: 8px;
+    }
+
+    &Tmb {
+      width: 80px;
+      height: auto;
+      padding: 0 10px;
+      text-align: center;
+
+      img {
+        border-radius: 50%;
+      }
+    }
+
+    &Title {
+      font-weight: 700;
+    }
+
+    &Description {
+      margin-top: 4px;
+      font-size: 12px;
+      color: #50506B;
+    }
+
+    &Text {
+      margin-top: 4px;
+      color: #50506B;
+    }
+
+    &SubText {
+      margin-top: 4px;
+      font-size: 12px;
+      color: #9DA1AC;
+    }
+  }
+
+  &__footer {
+    padding: 16px;
+  }
+
+  &__link {
+    display: block;
+    max-width: 300px;
+    padding: 8px 16px;
+    text-align: center;
+    color: #fff;
+    font-weight: 700;
+    border: 1px solid #E2E2E2;
+    border-radius: 4px;
+
+    background: #1D5AC5;
+    box-shadow: 
+      inset 0 0 5px rgba(55, 84, 170, 0), 
+      inset 0 0 10px rgba(255, 255, 255, 0), 
+      5px 5px 9px rgba(55, 84, 170, 0.15), 
+      -5px -5px 11px white, 
+      inset 0px 0px 2px rgba(255, 255, 255, 0.2);
+    transition: box-shadow 0.2s ease-in-out;
+    cursor: pointer;
+    outline: none;
+    border: none;
+
+    &:focus, &:hover {
+      color: black;
+    }
+  }
+}

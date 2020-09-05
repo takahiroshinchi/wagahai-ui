@@ -1,0 +1,50 @@
+// ----------------------------------
+// #
+// ----------------------------------
+
+// Setting
+@import 'setting/variables';
+
+// Generic
+@import 'generic/yakuhanjp';
+@import 'generic/reset';
+@import 'generic/universal';
+@import 'generic/root-element';
+@import 'generic/sections';
+@import 'generic/grouping-content';
+@import 'generic/text-level-semantics';
+@import 'generic/embedded-content';
+@import 'generic/links';
+@import 'generic/tables';
+@import 'generic/forms';
+@import 'generic/hidden';
+
+// Tools
+
+// Objects
+@import 'object/flex_image';
+@import 'object/flex_box';
+@import 'object/text';
+// @import 'object/media';
+@import 'object/animation';
+
+// Component
+@import 'component/contents';
+@import 'component/input';
+@import 'component/footer';
+@import 'component/fab';
+@import 'component/footer_navigation';
+@import 'component/pager';
+
+// Module
+@import 'module/result';
+@import 'module/word';
+
+.box{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  border-radius: 4px;
+  background-color: #E0E5EC;
+  box-shadow: 9px 9px 16px rgb(163, 177, 198, .6), -9px -9px 16px  rgba(255, 255, 255, .5);
+}

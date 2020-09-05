@@ -1,0 +1,35 @@
+<%- include('setting/_setting', {}); %>
+<!DOCTYPE html>
+<html lang="ja">
+<%- include('component/_header', {display:'default', type: 'default', version: 'default'}); %>
+<body>
+
+<section class="c-Contents">
+<div class="c-Contents__inner">
+<div class="c-Contents__header u-FlexBox u-FlexBox--middle">
+  <a class="btn-offcanvas" href="javascript:;">
+    <i aria-hidden="true" class="fa fa-lg fa-bars"></i>
+  </a>
+  <h1 class="c-Contents__headerTitle u-FlexBox__item--fill">
+    ヘッダー
+  </h1>
+  <a class="btn-setting" href="javascript:;">
+    <i aria-hidden="true" class="fa fa-lg fa-user-circle-o"></i>
+  </a>
+</div><!-- /c-Contents__header -->
+
+<div class="c-Contents__body">
+<%- include('module/_result_dictionary', {title: 'ピックアップ辞典', type: 'default', count: 3}); %>
+<%- include('module/_result_word', {title: 'ピックアップワード', type: 'default', count: 3}); %>
+<%- include('module/_result_user', {title: '注目ユーザー', type: 'default', count: 5}); %>
+<%- include('module/_result_dictionary', {title: '辞典一覧', type: 'list', count: 10}); %>
+</div><!-- /c-Contents__body -->
+
+</div><!-- /c-Contents__inner -->
+</section><!-- /c-Contents -->
+
+<%- include('component/_footer_navigation', {display:'default', type: 'default', service: 'default'}); %>
+<%- include('component/_footer', {display:'default', type: 'default', service: 'default'}); %>
+<%- include('component/_fab', {display:'default', type: 'default', service: 'default'}); %>
+</body>
+</html>
