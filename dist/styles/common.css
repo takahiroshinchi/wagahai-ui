@@ -735,7 +735,7 @@ template {
   padding: 5px;
 }
 .c-Tab__items {
-  padding: 2px;
+  padding: 4px;
   border-radius: 5px;
   background: #eee;
   text-align: center;
@@ -750,6 +750,7 @@ template {
 }
 .c-Tab__item.is-current {
   background: #fff;
+  box-shadow: 3px 3px 4px rgba(163, 177, 198, 0.3), -3px -3px 4px rgba(255, 255, 255, 0.2);
 }
 .c-Tab__separator {
   padding: 0 4px;
@@ -907,7 +908,7 @@ template {
 }
 
 /* ---------------------------------- *\
-   #NoMatch
+   #Profile
 \* ---------------------------------- */
 .sph-Profile__inner {
   margin: 0 auto;
@@ -1002,6 +1003,8 @@ template {
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
+  background: #fff;
+  box-shadow: 3px 3px 4px rgba(163, 177, 198, 0.3), -3px -3px 4px rgba(255, 255, 255, 0.2);
 }
 .sph-Diary__itemInner--detail {
   border: none;
@@ -1017,13 +1020,4 @@ template {
 }
 .sph-Diary__itemDescription {
   margin-top: 10px;
-}
-
-.box {
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 10px;
-  border-radius: 4px;
-  background-color: #E0E5EC;
-  box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.6), -9px -9px 16px rgba(255, 255, 255, 0.5);
 }
