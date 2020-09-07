@@ -1,0 +1,32 @@
+<% if (typeof display === 'undefined') { var display = 'default'; } -%>
+<% if (typeof type === 'undefined') { var type = 'default'; } -%>
+<% if (typeof service === 'undefined') { var service = 'default'; } -%>
+<section class="c-SubHeader">
+  <div class="c-SubHeader__inner">
+    <div class="c-SubHeader__header u-FlexBox u-FlexBox--middle">
+    <a href="javascript:;" class="c-SubHeader__user">
+      <span class="u-FlexImage u-FlexImage--1by1">
+      <img src="https://picsum.photos/80/80/?random" class="u-FlexImage__image u-FlexImage__image--img" alt="" loading="lazy">
+      </span>
+    </a><!-- /c-SubHeader__user -->
+    <h2 class="c-SubHeader__headerTitle u-FlexBox__item--fill"><%- title %></h2>
+    <% if (type === 'word') { -%>
+      <% if (rout === 'detail') { -%>
+    <a class="c-SubHeader__button" href="javascript:;">編集</a>
+      <% } else if (rout === 'edit') { -%>
+    <a class="c-SubHeader__button" href="javascript:;">保存</a>
+      <% } -%>
+    <% } else if (type === 'diary') { -%>
+      <% if (rout === 'detail') { -%>
+    <a class="c-SubHeader__button" href="javascript:;">編集</a>
+      <% } else if (rout === 'edit') { -%>
+    <a class="c-SubHeader__button" href="javascript:;">保存</a>
+      <% } else { -%>
+    <a class="c-SubHeader__button" href="javascript:;">日記を書く</a>
+      <% } -%>
+    <% } else { -%>
+    <a class="c-SubHeader__button" href="javascript:;">保存</a>
+    <% } -%>
+    </div><!-- /c-SubHeader__header -->
+  </div><!-- /c-SubHeader__inner -->
+</section><!-- /c-SubHeader -->

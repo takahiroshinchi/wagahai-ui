@@ -7,7 +7,7 @@
 <meta name="description" content="">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <meta name="format-detection" content="telephone=no">
-<link rel="stylesheet" type="text/css" href="../styles/common.css">
+<link rel="stylesheet" href="../styles/common.css">
 <link rel="stylesheet" href="../styles/font-awesome-4.7.0/css/font-awesome.min.css">
 </head>
 
@@ -26,62 +26,61 @@
 </div><!-- /c-Contents__header -->
 
 <div class="c-Contents__body">
-  <section class="sph-Word">
-<div class="sph-Word__inner">
-  <div class="sph-Word__header u-FlexBox u-FlexBox--middle">
-    <a href="javascript:;" class="sph-Word__user">
+<section class="c-SubHeader">
+  <div class="c-SubHeader__inner">
+    <div class="c-SubHeader__header u-FlexBox u-FlexBox--middle">
+    <a href="javascript:;" class="c-SubHeader__user">
       <span class="u-FlexImage u-FlexImage--1by1">
-        <img src="https://picsum.photos/80/80/?random" class="u-FlexImage__image u-FlexImage__image--img" alt="" loading="lazy">
+      <img src="https://picsum.photos/80/80/?random" class="u-FlexImage__image u-FlexImage__image--img" alt="" loading="lazy">
       </span>
-    </a><!-- /sph-Result__user -->
-    <h2 class="sph-Word__headerTitle u-FlexBox__item--fill">ユーザー名</h2>
-        <a class="sph-Word__button" href="javascript:;">保存</a>
-      </div><!-- /sph-Word__header -->
+    </a><!-- /c-SubHeader__user -->
+    <h2 class="c-SubHeader__headerTitle u-FlexBox__item--fill">ユーザー名</h2>
+              <a class="c-SubHeader__button" href="javascript:;">保存</a>
+              </div><!-- /c-SubHeader__header -->
+  </div><!-- /c-SubHeader__inner -->
+</section><!-- /c-SubHeader -->
 
+
+<div class="c-Input">
+  <div class="c-Input__inner">
+  <div class="c-Input__group">
+    <div class="c-Input__label">
+      <label for="wordID"><span>単語名を入力</span></label>
+    </div>
+    <input type="text" name="word" class="c-Input__control" id="wordID" value="">
+  </div><!-- /c-Input__group -->
   
-</div><!-- /sph-Word__inner -->
-</section><!-- /sph-Word -->
+  <div class="c-Input__group">
+    <div class="c-Input__label">
+      <label for="spellID"><span>読みを入力</span></label>
+    </div>
+    <input type="text" name="spell" class="c-Input__control" id="spellID" value="">
+  </div><!-- /c-Input__group -->
 
-  <div class="c-Input">
-    <div class="c-Input__inner">
-    <div class="c-Input__group">
-      <div class="c-Input__label">
-        <label for="wordID"><span>単語名を入力</span></label>
-      </div>
-      <input type="text" name="word" class="c-Input__control" id="wordID" value="">
-    </div><!-- /c-Input__group -->
-    
-    <div class="c-Input__group">
-      <div class="c-Input__label">
-        <label for="spellID"><span>読みを入力</span></label>
-      </div>
-      <input type="text" name="spell" class="c-Input__control" id="spellID" value="">
-    </div><!-- /c-Input__group -->
+  <div class="c-Input__group">
+    <div class="c-Input__label">
+      <span>辞書選択</span>
+    </div>
+    <div class="c-Input__checkbox" id="categoriesID">
+      <label><input type="checkbox" name="categories" value="1" checked>カテゴリ1</label>
+      <label><input type="checkbox" name="categories" value="2">カテゴリ2</label>
+      <label><input type="checkbox" name="categories" value="3">カテゴリ3</label>
+    </div>
+  </div><!-- /c-Input__group -->
 
-    <div class="c-Input__group">
-      <div class="c-Input__label">
-        <span>辞書選択</span>
-      </div>
-      <div class="c-Input__checkbox" id="categoriesID">
-        <label><input type="checkbox" name="categories" value="1" checked>カテゴリ1</label>
-        <label><input type="checkbox" name="categories" value="2">カテゴリ2</label>
-        <label><input type="checkbox" name="categories" value="3">カテゴリ3</label>
-      </div>
-    </div><!-- /c-Input__group -->
+  <div class="c-Input__group">
+    <div class="c-Input__label">
+      <label for="explainID"><span>単語説明入力</span></label>
+    </div>
+    <textarea name="explain" class="c-Input__control" id="explainID" rows="50" cols="40"></textarea>
+  </div><!-- /c-Input__group -->
 
-    <div class="c-Input__group">
-      <div class="c-Input__label">
-        <label for="explainID"><span>単語説明入力</span></label>
-      </div>
-      <textarea name="explain" class="c-Input__control" id="explainID" rows="50" cols="40"></textarea>
-    </div><!-- /c-Input__group -->
+  <div class="c-Input__group">
+    <input type="file" accept=".jpg,.gif,.png,image/gif,image/jpeg,image/png">
+  </div><!-- /c-Input__group -->
 
-    <div class="c-Input__group">
-      <input type="file" accept=".jpg,.gif,.png,image/gif,image/jpeg,image/png">
-    </div><!-- /c-Input__group -->
-
-    </div><!-- /c-Input__inner -->
-    </div><!-- /c-Input -->
+  </div><!-- /c-Input__inner -->
+</div><!-- /c-Input -->
 </div><!-- /c-Contents__body -->
 
 </div><!-- /c-Contents__inner -->

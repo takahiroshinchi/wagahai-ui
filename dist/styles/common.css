@@ -508,7 +508,8 @@ template {
   font-weight: 700;
 }
 .c-Contents__header .btn-offcanvas {
-  display: block;
+  background: #fff;
+  border: none;
   padding: 10px;
 }
 .c-Contents__header .btn-setting {
@@ -527,6 +528,10 @@ template {
 \* ---------------------------------- */
 .c-Input__inner {
   padding: 16px;
+}
+.c-Input__title {
+  padding-bottom: 10px;
+  font-weight: 700;
 }
 .c-Input__group {
   padding: 0 0 20px;
@@ -596,6 +601,45 @@ template {
 }
 .c-Footer__inner small {
   font-size: 14px;
+}
+
+/* ---------------------------------- *\
+   #Sub Header
+\* ---------------------------------- */
+.c-SubHeader__inner {
+  margin: 0 auto;
+  padding: 16px 8px;
+  background: #fff;
+}
+.c-SubHeader__header {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+.c-SubHeader__user {
+  margin-right: 10px;
+  width: 40px;
+}
+.c-SubHeader__user img {
+  border-radius: 50%;
+}
+.c-SubHeader__button {
+  display: block;
+  padding: 8px 32px;
+  text-align: center;
+  color: #fff;
+  font-weight: 700;
+  border: 1px solid #E2E2E2;
+  border-radius: 35px;
+  background: #1D5AC5;
+  box-shadow: inset 0 0 5px rgba(55, 84, 170, 0), inset 0 0 10px rgba(255, 255, 255, 0), 5px 5px 9px rgba(55, 84, 170, 0.15), -5px -5px 11px white, inset 0px 0px 2px rgba(255, 255, 255, 0.2);
+  -webkit-transition: box-shadow 0.2s ease-in-out;
+  transition: box-shadow 0.2s ease-in-out;
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+.c-SubHeader__button:focus, .c-SubHeader__button:hover {
+  color: black;
 }
 
 /* ---------------------------------- *\
@@ -682,6 +726,40 @@ template {
 .c-Pager__prev .icon-f:before, .c-Pager__next .icon-f:before {
   position: relative;
   margin-top: -2px;
+}
+
+/* ---------------------------------- *\
+   #Tab
+\* ---------------------------------- */
+.c-Tab__inner {
+  padding: 5px;
+}
+.c-Tab__items {
+  padding: 2px;
+  border-radius: 5px;
+  background: #eee;
+  text-align: center;
+}
+.c-Tab__item {
+  width: 100%;
+  padding: 4px;
+  border-radius: 4px;
+}
+.c-Tab__item a {
+  display: block;
+}
+.c-Tab__item.is-current {
+  background: #fff;
+}
+.c-Tab__separator {
+  padding: 0 4px;
+}
+
+/* ---------------------------------- *\
+   #Chart
+\* ---------------------------------- */
+.c-Chart__inner {
+  padding: 0 0 15px;
 }
 
 /* ---------------------------------- *\
@@ -787,42 +865,12 @@ template {
 }
 
 /* ---------------------------------- *\
-   #NoMatch
+   #Word
 \* ---------------------------------- */
 .sph-Word__inner {
   margin: 0 auto;
   padding: 16px 8px;
   background: #fff;
-}
-.sph-Word__header {
-  padding: 10px;
-  border-bottom: 1px solid #ccc;
-}
-.sph-Word__user {
-  margin-right: 10px;
-  width: 40px;
-}
-.sph-Word__user img {
-  border-radius: 50%;
-}
-.sph-Word__button {
-  display: block;
-  padding: 8px 32px;
-  text-align: center;
-  color: #fff;
-  font-weight: 700;
-  border: 1px solid #E2E2E2;
-  border-radius: 35px;
-  background: #1D5AC5;
-  box-shadow: inset 0 0 5px rgba(55, 84, 170, 0), inset 0 0 10px rgba(255, 255, 255, 0), 5px 5px 9px rgba(55, 84, 170, 0.15), -5px -5px 11px white, inset 0px 0px 2px rgba(255, 255, 255, 0.2);
-  -webkit-transition: box-shadow 0.2s ease-in-out;
-  transition: box-shadow 0.2s ease-in-out;
-  cursor: pointer;
-  outline: none;
-  border: none;
-}
-.sph-Word__button:focus, .sph-Word__button:hover {
-  color: black;
 }
 .sph-Word__title {
   padding-top: 15px;
@@ -856,6 +904,119 @@ template {
   height: 150px;
   padding-left: 5px;
   padding-bottom: 5px;
+}
+
+/* ---------------------------------- *\
+   #NoMatch
+\* ---------------------------------- */
+.sph-Profile__inner {
+  margin: 0 auto;
+  padding: 16px 8px;
+  background: #fff;
+}
+.sph-Profile__header {
+  padding: 10px;
+}
+.sph-Profile__user {
+  margin-right: 10px;
+  width: 80px;
+}
+.sph-Profile__user img {
+  border-radius: 50%;
+}
+.sph-Profile__actionTitle {
+  font-weight: 700;
+}
+.sph-Profile__actionItems {
+  padding: 10px 0;
+}
+.sph-Profile__actionItem {
+  display: inline-block;
+  margin-right: 5px;
+  padding: 4px 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 10px;
+}
+.sph-Profile__actionItem .fa {
+  margin-right: 5px;
+}
+.sph-Profile__selfintroduction {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  font-size: 13px;
+}
+.sph-Profile__scorecardItems {
+  padding: 10px;
+}
+.sph-Profile__scorecardItem {
+  width: 33.3333%;
+  border-right: 1px solid #ccc;
+  text-align: center;
+}
+.sph-Profile__scorecardItem:last-child {
+  border-right: none;
+}
+.sph-Profile__scorecardItem b {
+  display: block;
+  font-weight: 700;
+  font-size: 16px;
+}
+.sph-Profile__scorecardItem span {
+  font-size: 10px;
+}
+.sph-Profile__totalpoint {
+  padding: 15px 0 0;
+  text-align: center;
+}
+.sph-Profile__totalpoint span {
+  display: block;
+  font-weight: 700;
+}
+.sph-Profile__totalpoint b {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+/* ---------------------------------- *\
+   #Diary
+\* ---------------------------------- */
+.sph-Diary__inner {
+  margin: 0 auto;
+  padding: 16px 8px;
+  background: #fff;
+}
+.sph-Diary__header {
+  text-align: center;
+  padding-bottom: 15px;
+}
+.sph-Diary__headerTitle {
+  font-weight: 700;
+}
+.sph-Diary__headerButton {
+  width: 42px;
+}
+.sph-Diary__itemInner {
+  display: block;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.sph-Diary__itemInner--detail {
+  border: none;
+}
+.sph-Diary__itemTitle {
+  font-weight: 700;
+}
+.sph-Diary__itemText {
+  margin-top: 10px;
+}
+.sph-Diary__itemSubText {
+  margin-top: 10px;
+}
+.sph-Diary__itemDescription {
+  margin-top: 10px;
 }
 
 .box {

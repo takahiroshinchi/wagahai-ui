@@ -1,0 +1,58 @@
+<% if (typeof display === 'undefined') { var display = 'default'; } -%>
+<% if (typeof count === 'undefined') { var count = 3; } -%>
+<% if (typeof title === 'undefined') { var title = 'タイトル'; } -%>
+<% if (typeof type === 'undefined') { var type = 'default'; } -%>
+<% if (typeof rout === 'undefined') { var rout = 'default' } -%>
+<%
+var items = {
+  "dummy":[
+  {"title":"日記タイトルテキスト表示","description":"日記日記日記日記日記日記日記日記日記日記日記日記日記日記日記日記日記日記日記日記日記日記日記日記日記日記日記日記日記日記日記日記日記日記日記日記日記日記日記日記日記日記日記日記日記日記日記日記日記日記日記日記日記日記日記日記日記本文表示","link":"javascript:;","thumbnail":"https://picsum.photos/136/75/?random"},
+]};
+var n = items.dummy.length;
+while(n < count){
+  items.dummy.push({"title":"日記タイトルテキスト表示2行まで表示テキスト表示","description":"日記日記日記日記日記日記日記日記日記日記日記日記日記日記本文表示2行まで表示する","link":"javascript:;","thumbnail":"https://picsum.photos/seed/picsum/136/75"});
+  n++;
+}
+-%>
+<div class="sph-Diary">
+<div class="sph-Diary__inner">
+  <% if (rout === 'detail') { -%>
+  <div class="sph-Diary__header u-FlexBox u-FlexBox--middle">
+    <a class="sph-Diary__headerButton sph-Diary__headerButton--prev" href="javascript:;">
+      <i aria-hidden="true" class="fa fa-lg fa-angle-double-left"></i>
+    </a>
+    <p class="sph-Diary__headerTitle u-FlexBox__item--fill">
+      2020/08/01
+    </p>
+    <a class="sph-Diary__headerButton sph-Diary__headerButton--next" href="javascript:;">
+      <i aria-hidden="true" class="fa fa-lg fa-angle-double-right"></i>
+    </a>
+  </div><!-- /sph-Diary__header -->
+  <% } -%>
+
+  <div class="sph-Diary__body">
+    <div class="sph-Diary__items">
+      <% items["dummy"].forEach(function(data){ -%>
+      <section class="sph-Diary__item">
+        <% if (rout === 'detail') { -%>
+        <div class="sph-Diary__itemInner sph-Diary__itemInner--detail">
+          <div class="sph-Diary__itemDetail">
+            <h3 class="sph-Diary__itemTitle"><span class="u-TextEllipsis2line"><%= data.title %></span></h3>
+            <p class="sph-Diary__itemDescription"><span><%= data.description %></span></p>
+          </div><!-- /sph-Diary__itemDetail -->
+        </div><!-- /sph-Diary__itemInner -->
+        <% } else { -%>
+        <a href="<%= data.link %>" class="sph-Diary__itemInner">
+          <div class="sph-Diary__itemDetail">
+            <h3 class="sph-Diary__itemTitle"><span class="u-TextEllipsis2line"><%= data.title %></span></h3>
+            <p class="sph-Diary__itemText"><span class="u-TextEllipsis2line"><%= data.description %></span></p>
+            <p class="sph-Diary__itemSubText"><span class="u-TextEllipsis1line">2020/08/01</span></p>
+          </div><!-- /sph-Diary__itemDetail -->
+        </a><!-- /sph-Diary__itemInner -->
+        <% } -%>
+      </section><!-- /sph-Diary__item -->
+      <% }); -%>
+    </div><!-- /sph-Diary__items -->
+  </div><!-- /sph-Diary__body -->
+</div><!-- /sph-Diary__inner -->
+</div><!-- /sph-Diary -->

@@ -3,40 +3,40 @@
 \* ---------------------------------- */
 
 .c-Pager {
-   &__inner {
-      padding: 20px 0 32px;
-      background: #eee;
-      text-align: center;
-   }
+  &__inner {
+    padding: 20px 0 32px;
+    background: #eee;
+    text-align: center;
+  }
 
-   &__num {
+  &__num {
+    padding: 0 8px;
+    font-weight: 700;
+    white-space: nowrap;
+  }
+
+  &__separator {
+    padding: 0 4px;
+  }
+
+  &__prev,
+  &__next {
+    display: block;
+
+    &[disabled] {
+      color: #6c757d;
+      pointer-events: none;
+      cursor: auto;
+      border-color: #dee2e6;
+    }
+
+    .icon-f {
       padding: 0 8px;
-      font-weight: 700;
-      white-space: nowrap;
-   }
 
-   &__separator {
-      padding: 0 4px;
-   }
-
-   &__prev,
-   &__next {
-      display: block;
-
-      &[disabled] {
-         color: #6c757d;
-         pointer-events: none;
-         cursor: auto;
-         border-color: #dee2e6;
+      &:before {
+        position: relative;
+        margin-top: -2px;
       }
-
-      .icon-f {
-         padding: 0 8px;
-
-         &:before {
-            position: relative;
-            margin-top: -2px;
-         }
-      }
-   }
+    }
+  }
 }

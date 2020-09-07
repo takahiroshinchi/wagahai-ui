@@ -1,0 +1,35 @@
+<% if (typeof display === 'undefined') { var display = 'default'; } -%>
+<% if (typeof title === 'undefined') { var title = 'ユーザー名'; } -%>
+<% if (typeof type === 'undefined') { var type = 'default'; } -%>
+<% if (typeof rout === 'undefined') { var rout = 'default' } -%>
+<section class="c-Chart">
+<div class="c-Chart__inner">
+<div class="ct-chart"></div><!-- /ct-chart -->
+</div><!-- /c-Chart__inner -->
+</section><!-- /c-Chart -->
+
+<link rel="stylesheet" href="<%= Pass -%>styles/chartist.min.css">
+<script src="<%= Pass -%>scripts/chartist.min.js"></script>
+<script>
+/**
+ * cf. https://github.com/gionkunz/chartist-js
+ *
+ */
+new Chartist.Line('.ct-chart', {
+  labels: [1, 2, 3, 4, 5, 6, 7],
+  series: [
+    [1, 5, 3, 4, 6, 2, 3],
+    [2, 4, 2, 5, 4, 3, 6]
+  ]
+}, {
+  fullWidth: true,
+  chartPadding: {
+    right: 40
+  },
+//   showPoint: false,
+  axisX: {
+    // showLabel: false,
+    showGrid: false
+  }
+});
+</script>

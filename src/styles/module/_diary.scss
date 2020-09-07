@@ -1,0 +1,78 @@
+/* ---------------------------------- *\
+   #Diary
+\* ---------------------------------- */
+
+//----------------------------------------------------
+//  import
+//----------------------------------------------------
+
+// ----------------------------------------------------
+// 変数
+// ----------------------------------------------------
+.#{$setting-service-id}-Diary {
+
+  &__inner {
+    margin: 0 auto;
+    padding: 16px 8px;
+    background: #fff;
+  }
+
+  &__header {
+    text-align: center;
+    padding-bottom: 15px;
+
+    &Title {
+      font-weight: 700;
+    }
+
+    &Button {
+      width: 42px;
+
+      &--prev {
+
+      }
+
+      &--next {
+
+      }
+    }
+  }
+
+  &__body {
+  }
+
+  &__items {
+
+  }
+
+  &__item {
+
+    &Inner {
+      display: block;
+      margin-bottom: 10px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+
+      &--detail {
+        border: none;
+      }
+    }
+
+    &Title {
+      font-weight: 700;
+    }
+
+    &Text {
+      margin-top: 10px;
+    }
+
+    &SubText {
+      margin-top: 10px;
+    }
+
+    &Description {
+      margin-top: 10px;
+    }
+  }
+}

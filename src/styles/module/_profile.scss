@@ -1,0 +1,109 @@
+/* ---------------------------------- *\
+   #NoMatch
+\* ---------------------------------- */
+
+//----------------------------------------------------
+//  import
+//----------------------------------------------------
+
+// ----------------------------------------------------
+// 変数
+// ----------------------------------------------------
+.#{$setting-service-id}-Profile {
+
+  &__inner {
+    margin: 0 auto;
+    padding: 16px 8px;
+    background: #fff;
+  }
+
+  // header
+  &__header {
+    padding: 10px;
+  }
+
+  &__user {
+    margin-right: 10px;
+    width: 80px;
+
+    img {
+      border-radius: 50%;
+    }
+  }
+
+  &__action {
+    &Title {
+      font-weight: 700;
+    }
+
+    &Items {
+      padding: 10px 0;
+    }
+
+    &Item {
+      display: inline-block;
+      margin-right: 5px;
+      padding: 4px 10px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      font-size: 10px;
+
+      .fa {
+        margin-right: 5px;
+      }
+    }
+
+  }
+
+  // body
+  &__body {
+  }
+
+  &__selfintroduction {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    font-size: 13px;
+  }
+
+  &__scorecard {
+    &Items {
+      padding: 10px;
+    }
+
+    &Item {
+      width: 33.3333%;
+      border-right: 1px solid #ccc;
+      text-align: center;
+
+      &:last-child {
+        border-right: none;
+      }
+
+      b {
+        display: block;
+        font-weight: 700;
+        font-size: 16px;
+      }
+
+      span {
+        font-size: 10px;
+
+      }
+    }
+  }
+
+  &__totalpoint {
+    padding: 15px 0 0;
+    text-align: center;
+
+    span {
+      display: block;
+      font-weight: 700;
+    }
+
+    b {
+      font-size: 20px;
+      font-weight: 700;
+    }
+  }
+}

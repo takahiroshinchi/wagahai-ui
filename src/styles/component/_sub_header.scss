@@ -1,0 +1,59 @@
+/* ---------------------------------- *\
+   #Sub Header
+\* ---------------------------------- */
+
+//----------------------------------------------------
+//  import
+//----------------------------------------------------
+
+// ----------------------------------------------------
+// 変数
+// ----------------------------------------------------
+.c-SubHeader {
+
+  &__inner {
+    margin: 0 auto;
+    padding: 16px 8px;
+    background: #fff;
+  }
+
+  &__header {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+
+  &__user {
+    margin-right: 10px;
+    width: 40px;
+
+    img {
+      border-radius: 50%;
+    }
+  }
+
+  &__button {
+    display: block;
+     padding: 8px 32px;
+     text-align: center;
+     color: #fff;
+     font-weight: 700;
+     border: 1px solid #E2E2E2;
+     border-radius: 35px;
+
+     background: #1D5AC5;
+     box-shadow: 
+       inset 0 0 5px rgba(55, 84, 170, 0), 
+       inset 0 0 10px rgba(255, 255, 255, 0), 
+       5px 5px 9px rgba(55, 84, 170, 0.15), 
+       -5px -5px 11px white, 
+       inset 0px 0px 2px rgba(255, 255, 255, 0.2);
+     transition: box-shadow 0.2s ease-in-out;
+     cursor: pointer;
+     outline: none;
+     border: none;
+
+     &:focus, &:hover {
+       color: black;
+     }
+  }
+}

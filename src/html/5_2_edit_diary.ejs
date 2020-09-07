@@ -1,0 +1,46 @@
+<%- include('setting/_setting', {}); %>
+<!DOCTYPE html>
+<html lang="ja">
+<%- include('component/_header', {display:'default', type: 'default', version: 'default'}); %>
+<body>
+
+<section class="c-Contents">
+<div class="c-Contents__inner">
+<div class="c-Contents__header u-FlexBox u-FlexBox--middle">
+  <a class="btn-back" href="javascript:;">
+    <i aria-hidden="true" class="fa fa-lg fa-angle-left"></i>
+    <span>戻る</span>
+  </a>
+  <h1 class="c-Contents__headerTitle u-FlexBox__item--fill">
+    日記編集
+  </h1>
+</div><!-- /c-Contents__header -->
+
+<div class="c-Contents__body">
+<%- include('component/_sub_header', {title: 'ユーザー名', type: 'diary', rout: 'edit'}); %>
+<div class="c-Input">
+  <div class="c-Input__inner">
+  <p class="c-Input__title">2020/08/01</p>
+  <div class="c-Input__group">
+    <div class="c-Input__label">
+      <label for="titleID"><span>日記タイトルを入力</span></label>
+    </div>
+    <input type="text" name="title" class="c-Input__control" id="titleID" value="">
+  </div><!-- /c-Input__group -->
+
+  <div class="c-Input__group">
+    <div class="c-Input__label">
+      <label for="textID"><span>日記本文を入力</span></label>
+    </div>
+    <textarea name="text" class="c-Input__control" id="textID" rows="50" cols="40"></textarea>
+  </div><!-- /c-Input__group -->
+  </div><!-- /c-Input__inner -->
+</div><!-- /c-Input -->
+</div><!-- /c-Contents__body -->
+
+</div><!-- /c-Contents__inner -->
+</section><!-- /c-Contents -->
+
+<%- include('component/_footer', {display:'default', type: 'default', service: 'default'}); %>
+</body>
+</html>

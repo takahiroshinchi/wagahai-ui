@@ -32,13 +32,18 @@
 @import 'component/contents';
 @import 'component/input';
 @import 'component/footer';
+@import 'component/sub_header';
 @import 'component/fab';
 @import 'component/footer_navigation';
 @import 'component/pager';
+@import 'component/tab';
+@import 'component/chart';
 
 // Module
 @import 'module/result';
 @import 'module/word';
+@import 'module/profile';
+@import 'module/diary';
 
 .box{
   margin-left: auto;
