@@ -37,10 +37,13 @@
       </span>
     </a><!-- /sph-Profile__user -->
         <div class="sph-Profile__action u-FlexBox__item--fill">
-      <p class="sph-Profile__actionTitle">ランキング8位</p>
+      <p class="sph-Profile__actionTitle">ランキング99位</p>
       <div class="sph-Profile__actionItems u-FlexBox u-FlexBox--middle">
-        <a class="sph-Profile__actionItem" href="javascript:;"><i aria-hidden="true" class="fa fa-plus"></i>辞典</a>
-        <a class="sph-Profile__actionItem" href="javascript:;"><i aria-hidden="true" class="fa fa-plus"></i>日記</a>
+        <a class="sph-Profile__actionItem" href="javascript:;">日記</a>
+        <button class="sph-Profile__actionItem sph-Profile__actionItem--favorite" type="button">
+          <i aria-hidden="true" class="fa fa-lg fa-heart"></i>
+          <span>9999</span>
+        </button>
       </div><!-- /sph-Profile__actionItems -->
     </div><!-- /sph-Profile__action -->
       </div><!-- /sph-Profile__header -->
@@ -93,6 +96,7 @@
 new Chartist.Line('.ct-chart', {
   labels: [1, 2, 3, 4, 5, 6, 7],
   series: [
+    [1, 5, 3, 4, 6, 2, 3],
     [2, 4, 2, 5, 4, 3, 6]
   ]
 }, {

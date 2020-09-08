@@ -1,0 +1,35 @@
+<%- include('setting/_setting', {}); %>
+<!DOCTYPE html>
+<html lang="ja">
+<%- include('component/_header', {display:'default', type: 'default', version: 'default'}); %>
+<body>
+
+<section class="c-Contents">
+<div class="c-Contents__inner">
+<div class="c-Contents__header u-FlexBox u-FlexBox--middle">
+  <button class="btn-offcanvas" type="button">
+    <i aria-hidden="true" class="fa fa-lg fa-bars"></i>
+  </button>
+  <h1 class="c-Contents__headerTitle u-FlexBox__item--fill">
+    ユーザー名
+  </h1>
+  <a class="btn-setting" href="javascript:;">
+    <i aria-hidden="true" class="fa fa-lg fa-user-circle-o"></i>
+  </a>
+</div><!-- /c-Contents__header -->
+
+<div class="c-Contents__body">
+<%- include('module/_profile', {type: 'default', rout: 'other'}); %>
+<%- include('component/_chart', {type: 'default', rout: 'other'}); %>
+<%- include('component/_tab', {type: 'default'}); %>
+<%- include('module/_result_dictionary', {title: '辞典一覧', type: 'default', count: 10, rout: 'status'}); %>
+</div><!-- /c-Contents__body -->
+
+</div><!-- /c-Contents__inner -->
+</section><!-- /c-Contents -->
+
+<%- include('component/_footer_navigation', {display:'default', type: 'default', service: 'default'}); %>
+<%- include('component/_footer', {display:'default', type: 'default', service: 'default'}); %>
+<%- include('component/_fab', {display:'default', type: 'default', service: 'default'}); %>
+</body>
+</html>

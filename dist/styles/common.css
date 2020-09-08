@@ -804,7 +804,7 @@ template {
 .sph-Result__headerTitle {
   font-weight: 700;
 }
-.sph-Result__header .favorite {
+.sph-Result__headerFavorite {
   position: absolute;
   right: 10px;
   bottom: -10px;
@@ -812,7 +812,7 @@ template {
   border: 1px solid #ccc;
   border-radius: 10px;
 }
-.sph-Result__header .favorite .fa {
+.sph-Result__headerFavorite .fa {
   font-size: 14px;
 }
 .sph-Result__users {
@@ -962,6 +962,9 @@ template {
   border: 1px solid #ccc;
   border-radius: 10px;
   font-size: 10px;
+}
+.sph-Profile__actionItem--favorite {
+  background: #fff;
 }
 .sph-Profile__actionItem .fa {
   margin-right: 5px;
