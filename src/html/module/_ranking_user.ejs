@@ -1,0 +1,50 @@
+<% if (typeof display === 'undefined') { var display = 'default'; } -%>
+<% if (typeof count === 'undefined') { var count = 3; } -%>
+<% if (typeof title === 'undefined') { var title = 'タイトル'; } -%>
+<% if (typeof type === 'undefined') { var type = 'default'; } -%>
+<% if (typeof rout === 'undefined') { var rout = 'default' } -%>
+<%
+var items = {
+  "dummy":[
+  {"title":"タイトルの辞典テキスト表示1行","description":"「単語１」「単語２」「単語３」「単語４」「単語５」「単語単語単語」","link":"javascript:;","thumbnail":"https://picsum.photos/80/80/?random"},
+]};
+var n = items.dummy.length;
+while(n < count){
+  items.dummy.push({"title":"タイトルの辞典テキスト表示2行まで表示するコンテンツ名テキスト表示","description":"「単語１」「単語２」「単語３」「単語４」「単語５」「単語単語単語」表示2行まで表示する","link":"javascript:;","thumbnail":"https://picsum.photos/seed/picsum/80/80"});
+  n++;
+}
+-%>
+<div class="sph-Ranking sph-Ranking--user">
+<div class="sph-Ranking__inner">
+  <div class="sph-Ranking__body">
+    <div class="sph-Ranking__users">
+      <% items["dummy"].forEach(function(data, i){ -%>
+        <a href="<%= data.link %>" class="sph-Ranking__user u-FlexBox u-FlexBox--middle">
+          <% if (i === 0) { -%>
+          <span class="sph-Ranking__rank sph-Ranking__rank--1">
+            <i aria-hidden="true" class="fa fa-lg fa-flag"></i>
+            <b><%= i+1 %>位</b>
+          </span>
+          <% } else if (i === 1) { -%>
+          <span class="sph-Ranking__rank sph-Ranking__rank--2">
+            <i aria-hidden="true" class="fa fa-lg fa-flag"></i>
+            <b><%= i+1 %>位</b>
+          </span>
+          <% } else if (i === 2) { -%>
+          <span class="sph-Ranking__rank sph-Ranking__rank--3">
+            <i aria-hidden="true" class="fa fa-lg fa-flag"></i>
+            <b><%= i+1 %>位</b>
+          </span>
+          <% } else { -%>
+          <span class="sph-Ranking__rank">
+            <b><%= i+1 %>位</b>
+          </span>
+          <% } -%>
+          <span class="sph-Ranking__text u-FlexBox__item--fill"><b class="u-TextEllipsis2line">ユーザー名</b></span>
+          <span class="sph-Ranking__point"><b>189.00</b></span>
+        </a><!-- /sph-Ranking__user -->
+      <% }); -%>
+    </div><!-- /sph-Ranking__users -->
+  </div><!-- /sph-Ranking__body -->
+</div><!-- /sph-Ranking__inner -->
+</div><!-- /sph-Ranking -->

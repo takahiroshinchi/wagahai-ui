@@ -1,5 +1,29 @@
 <% if (typeof display === 'undefined') { var display = 'default'; } -%>
 <% if (typeof type === 'undefined') { var type = 'default'; } -%>
+<% if (typeof rout === 'undefined') { var rout = 'default' } -%>
+<% if (type === 'ranking') { -%>
+<nav class="c-Tab">
+<div class="c-Tab__inner">
+  <ul class="c-Tab__items u-FlexBox u-FlexBox--middle u-FlexBox--center">
+  <% if (rout == 'ranking_dictionary') { -%>
+    <li class="c-Tab__item">
+      <a href="javascript:;">ユーザーランキング</a>
+    </li><!-- /c-Tab__item -->
+    <li class="c-Tab__item is-current">
+      <a href="javascript:;">辞書ランキング</a>
+    </li><!-- /c-Tab__item -->
+  <% } else { -%>
+    <li class="c-Tab__item is-current">
+      <a href="javascript:;">ユーザーランキング</a>
+    </li><!-- /c-Tab__item -->
+    <li class="c-Tab__item">
+      <a href="javascript:;">辞書ランキング</a>
+    </li><!-- /c-Tab__item -->
+  <% } -%>
+  </ul><!-- /c-Tab__items --> 
+</div><!-- /c-Tab__inner -->
+</nav><!-- /c-Tab -->
+<% } else { -%>
 <nav class="c-Tab">
 <div class="c-Tab__inner">
   <ul class="c-Tab__items u-FlexBox u-FlexBox--middle u-FlexBox--center">
@@ -15,3 +39,4 @@
   </ul><!-- /c-Tab__items --> 
 </div><!-- /c-Tab__inner -->
 </nav><!-- /c-Tab -->
+<% } -%>

@@ -11,7 +11,7 @@
     <i aria-hidden="true" class="fa fa-lg fa-bars"></i>
   </button>
   <h1 class="c-Contents__headerTitle u-FlexBox__item--fill">
-    ユーザー名
+    〇〇ランキング
   </h1>
   <a class="btn-setting" href="javascript:;">
     <i aria-hidden="true" class="fa fa-lg fa-user-circle-o"></i>
@@ -19,10 +19,8 @@
 </div><!-- /c-Contents__header -->
 
 <div class="c-Contents__body">
-<%- include('module/_profile', {type: 'default'}); %>
-<%- include('component/_chart', {type: 'default'}); %>
-<%- include('component/_tab', {type: 'default'}); %>
-<%- include('module/_result_dictionary', {title: '辞典一覧', type: 'default', count: 10, rout: 'status'}); %>
+<%- include('component/_tab', {type: 'ranking', rout: 'ranking_dictionary'}); %>
+<%- include('module/_result_dictionary', {title: '辞典一覧', type: 'default', count: 10, rout: 'ranking_dictionary'}); %>
 </div><!-- /c-Contents__body -->
 
 </div><!-- /c-Contents__inner -->
@@ -30,6 +28,5 @@
 
 <%- include('component/_footer_navigation', {display:'default', type: 'default', service: 'default'}); %>
 <%- include('component/_footer', {display:'default', type: 'default', service: 'default'}); %>
-<%- include('component/_fab', {display:'default', type: 'default', service: 'default'}); %>
 </body>
 </html>

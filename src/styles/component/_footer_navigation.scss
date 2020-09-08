@@ -24,6 +24,10 @@
     &Body {
       display: block;
       padding: 24px;
+
+      .is-current & {
+        color: #1D5AC5;
+      }
     }
 
     .fa {

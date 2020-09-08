@@ -17,7 +17,10 @@ while(n < count){
 <section class="sph-Result sph-Result--dictionary">
 <div class="sph-Result__inner">
   <div class="sph-Result__header u-FlexBox u-FlexBox--middle">
+    <% if (rout === 'ranking_dictionary') { -%>
+    <% } else { -%>
     <h2 class="sph-Result__headerTitle u-FlexBox__item--fill"><%- title %></h2>
+    <% } -%>
     <% if (type === 'list') { -%>
     <select name="sort" class="sph-Result__option">
       <option value="1" selected>おすすめ順</option>

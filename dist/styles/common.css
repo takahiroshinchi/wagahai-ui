@@ -515,6 +515,7 @@ template {
 .c-Contents__header .btn-setting {
   display: block;
   padding: 10px;
+  font-size: 18px;
 }
 .c-Contents__header .btn-back {
   position: absolute;
@@ -522,6 +523,9 @@ template {
   top: 50%;
   left: 10px;
   margin-top: -0.5em;
+}
+.c-Contents__body {
+  padding-top: 20px;
 }
 /* ---------------------------------- *\
    #Input
@@ -608,7 +612,7 @@ template {
 \* ---------------------------------- */
 .c-SubHeader__inner {
   margin: 0 auto;
-  padding: 16px 8px;
+  padding: 0 8px 16px;
   background: #fff;
 }
 .c-SubHeader__header {
@@ -686,6 +690,9 @@ template {
   display: block;
   padding: 24px;
 }
+.is-current .c-FooterNavigation__itemBody {
+  color: #1D5AC5;
+}
 .c-FooterNavigation__item .fa {
   display: block;
 }
@@ -732,7 +739,7 @@ template {
    #Tab
 \* ---------------------------------- */
 .c-Tab__inner {
-  padding: 5px;
+  padding: 10px 5px;
 }
 .c-Tab__items {
   padding: 4px;
@@ -764,15 +771,31 @@ template {
 }
 
 /* ---------------------------------- *\
+   #Search Box
+\* ---------------------------------- */
+.c-SearchBox__inner {
+  padding: 15px 10px;
+}
+.c-SearchBox__search {
+  width: 100%;
+  padding: 4px 10px;
+  border-radius: 4px;
+  background: #eee;
+  border: 1px solid #ccc;
+  box-shadow: 3px 3px 4px rgba(163, 177, 198, 0.3), -3px -3px 4px rgba(255, 255, 255, 0.2);
+}
+.c-SearchBox__search input[type=search] {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+}
+
+/* ---------------------------------- *\
    #Result
 \* ---------------------------------- */
-.sph-Result__inner {
-  padding-top: 20px;
-}
 .sph-Result__header {
   position: relative;
-  padding-left: 8px;
-  padding-right: 8px;
+  padding: 8px;
 }
 .sph-Result__header--border {
   padding: 15px 10px;
@@ -903,8 +926,9 @@ template {
   float: right;
   width: 150px;
   height: 150px;
-  padding-left: 5px;
-  padding-bottom: 5px;
+  margin-left: 3px;
+  margin-bottom: 3px;
+  box-shadow: 6px 6px 8px rgba(163, 177, 198, 0.3), -6px -6px 8px rgba(255, 255, 255, 0.2);
 }
 
 /* ---------------------------------- *\
@@ -1020,4 +1044,43 @@ template {
 }
 .sph-Diary__itemDescription {
   margin-top: 10px;
+}
+
+/* ---------------------------------- *\
+   #Ranking
+\* ---------------------------------- */
+.sph-Ranking__inner {
+  margin: 0 auto;
+  padding: 16px 8px;
+  background: #fff;
+}
+.sph-Ranking__user {
+  padding: 10px 5px;
+  border-bottom: 1px solid #ccc;
+}
+.sph-Ranking__rank {
+  min-width: 50px;
+  text-align: right;
+  color: #999;
+}
+.sph-Ranking__rank .fa {
+  margin-right: 5px;
+}
+.sph-Ranking__rank--1 {
+  color: #C6B70B;
+}
+.sph-Ranking__rank--2 {
+  color: #C0C0CB;
+}
+.sph-Ranking__rank--3 {
+  color: #7E5F0A;
+}
+.sph-Ranking__text {
+  padding: 0 20px;
+}
+.sph-Ranking__text b {
+  font-weight: normal;
+}
+.sph-Ranking__point b {
+  font-weight: normal;
 }

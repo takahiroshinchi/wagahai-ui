@@ -1,0 +1,68 @@
+/* ---------------------------------- *\
+   #Ranking
+\* ---------------------------------- */
+
+//----------------------------------------------------
+//  import
+//----------------------------------------------------
+
+// ----------------------------------------------------
+// 変数
+// ----------------------------------------------------
+.#{$setting-service-id}-Ranking {
+
+  &__inner {
+    margin: 0 auto;
+    padding: 16px 8px;
+    background: #fff;
+  }
+
+  &__body {
+  }
+
+  &__users {
+
+  }
+
+  &__user {
+    padding: 10px 5px;
+    border-bottom: 1px solid #ccc;
+  }
+
+  &__rank {
+    min-width: 50px;
+    text-align: right;
+    color: #999;
+
+    .fa {
+      margin-right: 5px;
+    }
+
+    &--1 {
+      color: #C6B70B;
+
+    }
+
+    &--2 {
+      color: #C0C0CB;
+    }
+
+    &--3 {
+      color: #7E5F0A;
+    }
+  }
+
+  &__text {
+    padding: 0 20px;
+
+    b {
+      font-weight: normal;
+    }
+  }
+
+  &__point {
+    b {
+      font-weight: normal;
+    }
+  }
+}

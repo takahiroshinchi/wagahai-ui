@@ -1,0 +1,25 @@
+/* ---------------------------------- *\
+   #Search Box
+\* ---------------------------------- */
+
+.c-SearchBox {
+  &__inner {
+    padding: 15px 10px;
+  }
+
+  &__search {
+    width: 100%;
+    padding: 4px 10px;
+    border-radius: 4px;
+    background: #eee;
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 4px rgb(163, 177, 198, .3), -3px -3px 4px  rgba(255, 255, 255, .2);
+
+    // < c-Input__control
+    input[type="search"] {
+      background: transparent;
+      border: none;
+      box-shadow: none;
+    }
+  }
+}

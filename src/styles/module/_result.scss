@@ -11,13 +11,12 @@
 // ----------------------------------------------------
 .#{$setting-service-id}-Result {
   &__inner {
-    padding-top: 20px;
+    // padding-top: 20px;
   }
 
   &__header {
     position: relative;
-    padding-left: 8px;
-    padding-right: 8px;
+    padding: 8px;
 
     &--border {
       padding: 15px 10px;
