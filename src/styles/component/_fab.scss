@@ -8,6 +8,10 @@
   right: 10px;
   z-index: 2;
 
+  .show-menu & {
+    position: static;
+  }
+
   &__inner {
   }
 

@@ -484,6 +484,7 @@ template {
 .c-Contents__inner {
   padding: 0;
   background: #fff;
+  min-height: 100vh;
 }
 .c-Contents__header {
   position: -webkit-sticky;
@@ -661,6 +662,9 @@ template {
   right: 10px;
   z-index: 2;
 }
+.show-menu .c-FAB {
+  position: static;
+}
 .c-FAB__itemBody {
   display: block;
   padding: 10px 12px;
@@ -683,6 +687,9 @@ template {
   bottom: 0;
   left: 0;
   width: 100%;
+}
+.show-menu .c-FooterNavigation {
+  position: static;
 }
 .c-FooterNavigation__inner {
   border-top: 1px solid #eee;

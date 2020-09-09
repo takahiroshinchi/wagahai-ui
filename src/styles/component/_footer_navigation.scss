@@ -8,6 +8,10 @@
   left: 0;
   width: 100%;
 
+  .show-menu & {
+    position: static;
+  }
+
   &__inner {
     border-top: 1px solid #eee;
     background: #fff;
