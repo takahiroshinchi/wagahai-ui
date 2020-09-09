@@ -604,6 +604,9 @@ template {
 /* ---------------------------------- *\
    #Footer
 \* ---------------------------------- */
+.show-menu .c-Footer {
+  display: none;
+}
 .c-Footer__inner {
   padding: 24px 24px 100px;
   border-top: 1px solid #eee;
@@ -663,7 +666,7 @@ template {
   z-index: 2;
 }
 .show-menu .c-FAB {
-  position: static;
+  display: none;
 }
 .c-FAB__itemBody {
   display: block;
@@ -689,7 +692,7 @@ template {
   width: 100%;
 }
 .show-menu .c-FooterNavigation {
-  position: static;
+  display: none;
 }
 .c-FooterNavigation__inner {
   border-top: 1px solid #eee;

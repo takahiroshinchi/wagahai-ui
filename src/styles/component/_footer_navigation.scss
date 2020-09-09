@@ -9,7 +9,7 @@
   width: 100%;
 
   .show-menu & {
-    position: static;
+    display: none;
   }
 
   &__inner {

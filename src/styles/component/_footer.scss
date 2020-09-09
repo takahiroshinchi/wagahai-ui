@@ -3,6 +3,10 @@
 \* ---------------------------------- */
 
 .c-Footer {
+  .show-menu & {
+    display: none;
+  }
+
   &__inner {
     padding: 24px 24px 100px;
     border-top: 1px solid #eee;
