@@ -561,6 +561,12 @@ template {
   -webkit-transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
+.c-Input__control--borderBox {
+  display: inline-block;
+  width: 120px;
+  background: transparent;
+  border: 2px solid #fff;
+}
 .c-Input textarea {
   min-height: 200px;
 }

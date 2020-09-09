@@ -3,11 +3,14 @@
 <html lang="ja">
 <%- include('component/_header', {display:'default', type: 'default', version: 'default'}); %>
 <body>
+<div class="container">
+<%- include('component/_menu_wrap', {display:'default', type: 'default', version: 'default'}); %>
+<div class="content-wrap">
 
-<section class="c-Contents">
+<section class="c-Contents content">
 <div class="c-Contents__inner">
 <div class="c-Contents__header u-FlexBox u-FlexBox--middle">
-  <button class="btn-offcanvas" type="button">
+  <button class="btn-offcanvas" type="button" id="open-button">
     <i aria-hidden="true" class="fa fa-lg fa-bars"></i>
   </button>
   <h1 class="c-Contents__headerTitle u-FlexBox__item--fill">
@@ -26,7 +29,10 @@
 </div><!-- /c-Contents__body -->
 
 </div><!-- /c-Contents__inner -->
-</section><!-- /c-Contents -->
+</section><!-- /c-Contents @OffCanvasMenuEffects .content -->
+
+</div><!-- /content-wrap @OffCanvasMenuEffects -->
+</div><!-- /container @OffCanvasMenuEffects -->
 
 <%- include('component/_footer_navigation', {display:'default', type: 'default', service: 'default'}); %>
 <%- include('component/_footer', {display:'default', type: 'default', service: 'default'}); %>

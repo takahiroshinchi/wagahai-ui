@@ -36,6 +36,13 @@
     box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
     transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+
+    &--borderBox {
+      display: inline-block;
+      width: 120px;
+      background: transparent;
+      border: 2px solid #fff;
+    }
   }
 
   textarea {
