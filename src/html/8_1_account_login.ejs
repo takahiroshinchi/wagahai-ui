@@ -1,0 +1,49 @@
+<%- include('setting/_setting', {}); %>
+<!DOCTYPE html>
+<html lang="ja">
+<%- include('component/_header', {display:'default', type: 'default', version: 'default'}); %>
+<body>
+
+<section class="c-Contents">
+<div class="c-Contents__inner">
+<div class="c-Contents__header u-FlexBox u-FlexBox--middle">
+  <a class="btn-back" href="javascript:;">
+    <i aria-hidden="true" class="fa fa-lg fa-angle-left"></i>
+    <span>戻る</span>
+  </a>
+  <h1 class="c-Contents__headerTitle u-FlexBox__item--fill">
+    設定
+  </h1>
+</div><!-- /c-Contents__header -->
+
+<div class="c-Contents__body">
+<div class="c-Input">
+<div class="c-Input__inner">
+  <p class="c-Input__title">サインイン</p>
+  <div class="c-Input__group">
+    <div class="c-Input__label">
+      <label for="userID"><span>ユーザー名</span></label>
+    </div>
+    <input type="text" name="user" class="c-Input__control" id="userID" placeholder="Name or E-mail" value="">
+  </div><!-- /c-Input__group -->
+
+  <div class="c-Input__group">
+    <div class="c-Input__label">
+      <label for="passwordID"><span>パスワード</span></label>
+    </div>
+    <input type="password" name="password" class="c-Input__control" id="passwordID" value="">
+  </div><!-- /c-Input__group -->
+
+  <div class="c-Input__action u-FlexBox u-FlexBox--middle u-FlexBox--right">
+    <a class="c-Input__button" href="javascript:;">ログイン</a>
+  </div><!-- /c-c-Input__footer -->
+</div><!-- /c-Input__inner -->
+</div><!-- /c-Input -->
+</div><!-- /c-Contents__body -->
+
+</div><!-- /c-Contents__inner -->
+</section><!-- /c-Contents -->
+
+<%- include('component/_footer', {display:'default', type: 'default', service: 'default'}); %>
+</body>
+</html>

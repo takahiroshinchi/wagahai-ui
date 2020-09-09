@@ -580,9 +580,16 @@ template {
 .c-Input__action {
   padding: 16px;
 }
+.c-Input__link {
+  display: block;
+  padding: 8px 16px;
+}
+.c-Input__spacer::before {
+  content: " ";
+}
 .c-Input__button {
   display: block;
-  min-width: 250px;
+  min-width: 200px;
   padding: 8px 16px;
   text-align: center;
   color: #fff;
@@ -612,9 +619,17 @@ template {
   border-top: 1px solid #eee;
   background: #fff;
   text-align: center;
-}
-.c-Footer__inner small {
   font-size: 14px;
+}
+.c-Footer__item {
+  padding: 5px 0;
+}
+.c-Footer__item::after {
+  content: "-";
+  margin: 0 5px;
+}
+.c-Footer__item:last-child::after {
+  display: none;
 }
 
 /* ---------------------------------- *\

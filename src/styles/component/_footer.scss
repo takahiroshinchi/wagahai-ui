@@ -12,9 +12,27 @@
     border-top: 1px solid #eee;
     background: #fff;
     text-align: center;
-
-    small {
-      font-size: 14px;
-    }
+    font-size: 14px;
   }
+
+  &__items {
+
+  }
+
+  &__item {
+    padding: 5px 0;
+
+    &::after {
+      content: "-";
+      margin: 0 5px;
+    }
+
+    &:last-child {
+      &::after {
+        display: none;
+      }
+    }
+
+  }
+
 }

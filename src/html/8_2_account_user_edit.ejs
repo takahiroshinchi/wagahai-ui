@@ -1,0 +1,66 @@
+<%- include('setting/_setting', {}); %>
+<!DOCTYPE html>
+<html lang="ja">
+<%- include('component/_header', {display:'default', type: 'default', version: 'default'}); %>
+<body>
+
+<section class="c-Contents">
+<div class="c-Contents__inner">
+<div class="c-Contents__header u-FlexBox u-FlexBox--middle">
+  <a class="btn-back" href="javascript:;">
+    <i aria-hidden="true" class="fa fa-lg fa-angle-left"></i>
+    <span>戻る</span>
+  </a>
+  <h1 class="c-Contents__headerTitle u-FlexBox__item--fill">
+    設定
+  </h1>
+</div><!-- /c-Contents__header -->
+
+<div class="c-Contents__body">
+<%- include('component/_sub_header', {title: 'ユーザー名', type: 'setting', rout: 'detail'}); %>
+<div class="c-Input">
+<div class="c-Input__inner">
+  <p class="c-Input__title">アカウント：XxXXYyUu</p>
+  <div class="c-Input__group">
+    <div class="c-Input__label">
+      <label for="userID"><span>ユーザー名</span></label>
+    </div>
+    <input type="text" name="user" class="c-Input__control" id="userID" value="Yui Aragaki">
+  </div><!-- /c-Input__group -->
+
+  <div class="c-Input__group">
+    <div class="c-Input__label">
+      <label for="emailID"><span>ユーザー名</span></label>
+    </div>
+    <input type="email" name="email" class="c-Input__control" id="emailID" value="Xxxxxxxx@gmail.com">
+  </div><!-- /c-Input__group -->
+
+  <div class="c-Input__group">
+    <div class="c-Input__label">
+      <label for="passwordID"><span>パスワード</span></label>
+    </div>
+    <input type="password" name="password" class="c-Input__control" id="passwordID" value="">
+  </div><!-- /c-Input__group -->
+
+  <div class="c-Input__group">
+    <div class="c-Input__label">
+      <label for="selfintroductionID"><span>自己紹介</span></label>
+    </div>
+    <textarea name="text" class="c-Input__control" id="selfintroductiontID" rows="50" cols="40"></textarea>
+  </div><!-- /c-Input__group -->
+
+  <div class="c-Input__action u-FlexBox u-FlexBox--middle u-FlexBox--right">
+    <a class="c-Input__link" href="javascript:;">ログアウト</a>
+    <span class="c-Input__c-Input__spacer u-FlexBox__item--fill"></span>
+    <a class="c-Input__button" href="javascript:;">変更</a>
+  </div><!-- /c-c-Input__footer -->
+</div><!-- /c-Input__inner -->
+</div><!-- /c-Input -->
+</div><!-- /c-Contents__body -->
+
+</div><!-- /c-Contents__inner -->
+</section><!-- /c-Contents -->
+
+<%- include('component/_footer', {display:'default', type: 'default', service: 'default'}); %>
+</body>
+</html>

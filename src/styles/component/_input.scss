@@ -63,9 +63,20 @@
     padding: 16px;
   }
 
+  &__link {
+    display: block;
+    padding: 8px 16px;
+  }
+
+  &__spacer {
+    &::before {
+      content: " ";
+    }
+  }
+
   &__button {
     display: block;
-    min-width: 250px;
+    min-width: 200px;
     padding: 8px 16px;
     text-align: center;
     color: #fff;
