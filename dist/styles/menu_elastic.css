@@ -1,8 +1,9 @@
-/* html, */
-body.show-menu,
-.show-menu .container, 
-.show-menu .content-wrap {
+html,
+body,
+.container, 
+.content-wrap {
 	overflow: hidden;
+	overflow-y: visible;
 	width: 100%;
 	height: 100%;
 }
