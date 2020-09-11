@@ -43,6 +43,10 @@
   }
 
   &__option {
+    background: #fff;
+    border-radius: 4px;
+    color: #333;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   }
 
   &__body {
@@ -58,8 +62,14 @@
     margin-right: 10px;
     width: 40px;
 
-    img {
-      border-radius: 50%;
+    &Image {
+      img {
+        border-radius: 50%;
+      }
+    }
+
+    &Name {
+      font-size: 10px;
     }
   }
 

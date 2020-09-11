@@ -11,9 +11,9 @@
     width: 100%;
     padding: 4px 10px;
     border-radius: 4px;
-    background: #eee;
+    background: #fff;
     border: 1px solid #ccc;
-    box-shadow: 3px 3px 4px rgb(163, 177, 198, .3), -3px -3px 4px  rgba(255, 255, 255, .2);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 10px 20px -12px inset, rgba(0, 0, 0, 0.3) 0px 8px 16px -18px inset;
 
     // < c-Input__control
     input[type="search"] {

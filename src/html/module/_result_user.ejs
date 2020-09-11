@@ -24,8 +24,11 @@ while(n < count){
     <div class="sph-Result__users">
       <% items["dummy"].forEach(function(data){ -%>
         <a href="<%= data.link %>" class="sph-Result__user">
-          <span class="u-FlexImage u-FlexImage--1by1">
+          <span class="sph-Result__userImage u-FlexImage u-FlexImage--1by1">
             <img src="<%= data.thumbnail %>" class="u-FlexImage__image u-FlexImage__image--img" alt="" loading="lazy">
+          </span>
+          <span class="sph-Result__userName u-TextEllipsis2line">
+            名前名前名前名前名前名前名前名前名前名前
           </span>
         </a><!-- /sph-Result__user -->
       <% }); -%>

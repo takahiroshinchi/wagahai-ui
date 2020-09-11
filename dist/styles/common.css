@@ -498,6 +498,7 @@ template {
   z-index: 2;
   background: #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
 }
 .c-Contents__headerTitle {
   text-align: center;
@@ -565,6 +566,8 @@ template {
 .c-Input__control--borderBox {
   display: inline-block;
   width: 120px;
+  padding: 4px;
+  font-size: 10px;
   background: transparent;
   border: 2px solid #fff;
 }
@@ -705,6 +708,7 @@ template {
   bottom: 0;
   left: 0;
   width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px -6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
 }
 .show-menu .c-FooterNavigation {
   display: none;
@@ -811,14 +815,51 @@ template {
   width: 100%;
   padding: 4px 10px;
   border-radius: 4px;
-  background: #eee;
+  background: #fff;
   border: 1px solid #ccc;
-  box-shadow: 3px 3px 4px rgba(163, 177, 198, 0.3), -3px -3px 4px rgba(255, 255, 255, 0.2);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 10px 20px -12px inset, rgba(0, 0, 0, 0.3) 0px 8px 16px -18px inset;
 }
 .c-SearchBox__search input[type=search] {
   background: transparent;
   border: none;
   box-shadow: none;
+}
+
+/* ---------------------------------- *\
+   #Edit Image
+\* ---------------------------------- */
+.c-EditImage__inner {
+  padding: 10px 5px;
+  text-align: center;
+}
+.c-EditImage__source {
+  display: none;
+}
+.c-EditImage__canvas {
+  width: 300px;
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 4px;
+  background-color: #E0E5EC;
+  box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.6), -9px -9px 16px rgba(255, 255, 255, 0.5);
+}
+.c-EditImage__button {
+  display: inline-block;
+  margin: 1rem auto;
+  position: relative;
+  padding: 15px;
+  background: #f1f3f6;
+  border-radius: 10px;
+  box-shadow: inset 0 0 5px rgba(55, 84, 170, 0), inset 0 0 10px rgba(255, 255, 255, 0), 5px 5px 9px rgba(55, 84, 170, 0.15), -5px -5px 11px white, inset 0px 0px 2px rgba(255, 255, 255, 0.2);
+  -webkit-transition: box-shadow 0.2s ease-in-out;
+  transition: box-shadow 0.2s ease-in-out;
+  font-weight: bold;
+  color: gray;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  white-space: nowrap;
 }
 
 /* ---------------------------------- *\
@@ -846,6 +887,12 @@ template {
 .sph-Result__headerFavorite .fa {
   font-size: 14px;
 }
+.sph-Result__option {
+  background: #fff;
+  border-radius: 4px;
+  color: #333;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
 .sph-Result__users {
   padding: 10px;
   overflow: hidden;
@@ -855,8 +902,11 @@ template {
   margin-right: 10px;
   width: 40px;
 }
-.sph-Result__user img {
+.sph-Result__userImage img {
   border-radius: 50%;
+}
+.sph-Result__userName {
+  font-size: 10px;
 }
 .sph-Result__item {
   margin: 8px 0 0;
