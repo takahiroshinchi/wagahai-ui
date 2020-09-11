@@ -36,16 +36,18 @@ while(n < count){
     <div class="sph-Result__items">
       <% items["dummy"].forEach(function(data){ -%>
       <section class="sph-Result__item">
-        <a href="<%= data.link %>" class="sph-Result__itemInner u-FlexBox">
+        <div class="sph-Result__itemInner u-FlexBox">
           <div class="sph-Result__itemDetail u-FlexBox__item--fill">
-            <h3 class="sph-Result__itemTitle"><span class="u-TextEllipsis2line"><%= data.title %></span></h3>
-            <% if(rout === 'create') { -%>
-            <p class="sph-Result__itemDescription"><span class="u-TextEllipsis2line">未定義</span></p>
-            <% } else { -%>
-            <p class="sph-Result__itemDescription"><span class="u-TextEllipsis2line"><%= data.description %></span></p>
-            <% } -%>
+            <a href="<%= data.link %>" class="sph-Result__itemLink">
+              <h3 class="sph-Result__itemTitle"><span class="u-TextEllipsis2line"><%= data.title %></span></h3>
+              <% if(rout === 'create') { -%>
+              <p class="sph-Result__itemDescription"><span class="u-TextEllipsis2line">未定義</span></p>
+              <% } else { -%>
+              <p class="sph-Result__itemDescription"><span class="u-TextEllipsis2line"><%= data.description %></span></p>
+              <% } -%>
+            </a><!-- /sph-Result__itemLink -->
           </div><!-- /sph-Result__itemDetail -->
-        </a><!-- /sph-Result__itemInner -->
+        </div><!-- /sph-Result__itemInner -->
       </section><!-- /sph-Result__item -->
       <% }); -%>
     </div><!-- /sph-Result__items -->

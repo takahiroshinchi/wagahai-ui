@@ -919,6 +919,9 @@ template {
 .sph-Result__itemInner {
   padding: 8px;
 }
+.sph-Result__itemLink {
+  display: block;
+}
 .sph-Result__itemTmb {
   width: 80px;
   height: auto;

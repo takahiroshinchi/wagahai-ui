@@ -35,17 +35,19 @@ while(n < count){
     <div class="sph-Result__items">
       <% items["dummy"].forEach(function(data){ -%>
       <section class="sph-Result__item">
-        <a href="<%= data.link %>" class="sph-Result__itemInner u-FlexBox">
-          <p class="sph-Result__itemTmb">
-            <span class="u-FlexImage u-FlexImage--1by1">
+        <div class="sph-Result__itemInner u-FlexBox">
+          <div class="sph-Result__itemTmb">
+            <a href="<%= data.link %>" class="sph-Result__itemLink u-FlexImage u-FlexImage--1by1">
               <img src="<%= data.thumbnail %>" class="u-FlexImage__image u-FlexImage__image--img" alt="" loading="lazy">
-            </span>
-          </p>
+            </a>
+          </div><!-- /sph-Result__itemTmb -->
           <div class="sph-Result__itemDetail u-FlexBox__item--fill">
-            <h3 class="sph-Result__itemTitle"><span class="u-TextEllipsis2line"><%= data.title %></span></h3>
-            <p class="sph-Result__itemDescription"><span class="u-TextEllipsis2line"><%= data.description %></span></p>
+            <a href="<%= data.link %>" class="sph-Result__itemLink">
+              <h3 class="sph-Result__itemTitle"><span class="u-TextEllipsis2line"><%= data.title %></span></h3>
+              <p class="sph-Result__itemDescription"><span class="u-TextEllipsis2line"><%= data.description %></span></p>
+            </a>
           </div><!-- /sph-Result__itemDetail -->
-        </a><!-- /sph-Result__itemInner -->
+        </div><!-- /sph-Result__itemInner -->
       </section><!-- /sph-Result__item -->
       <% }); -%>
     </div><!-- /sph-Result__items -->
