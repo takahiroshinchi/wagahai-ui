@@ -17,22 +17,14 @@
 </div><!-- /c-Contents__header -->
 
 <div class="c-Contents__body">
-<%- include('component/_sub_header', {title: 'ユーザー名', type: 'setting', rout: 'detail'}); %>
 <div class="c-Input">
 <div class="c-Input__inner">
-  <p class="c-Input__title">アカウント：XxXXYyUu</p>
+  <p class="c-Input__title">サインアップ</p>
   <div class="c-Input__group">
     <div class="c-Input__label">
-      <label for="userID"><span>ユーザー名</span></label>
+      <label for="userID"><span>メールアドレス</span></label>
     </div>
-    <input type="text" name="user" class="c-Input__control" id="userID" value="Yui Aragaki">
-  </div><!-- /c-Input__group -->
-
-  <div class="c-Input__group">
-    <div class="c-Input__label">
-      <label for="emailID"><span>メールアドレス</span></label>
-    </div>
-    <input type="email" name="email" class="c-Input__control" id="emailID" value="Xxxxxxxx@gmail.com">
+    <input type="text" name="user" class="c-Input__control" id="userID" placeholder="E-mail" value="">
   </div><!-- /c-Input__group -->
 
   <div class="c-Input__group">
@@ -44,15 +36,13 @@
 
   <div class="c-Input__group">
     <div class="c-Input__label">
-      <label for="selfintroductionID"><span>自己紹介</span></label>
+      <label for="nameID"><span>ユーザー名（表示名）</span></label>
     </div>
-    <textarea name="text" class="c-Input__control" id="selfintroductiontID" rows="50" cols="40"></textarea>
+    <input type="text" name="name" class="c-Input__control" id="nemeID" placeholder="name" value="">
   </div><!-- /c-Input__group -->
 
   <div class="c-Input__action u-FlexBox u-FlexBox--middle u-FlexBox--right">
-    <a class="c-Input__link" href="javascript:;">ログアウト</a>
-    <span class="c-Input__c-Input__spacer u-FlexBox__item--fill"></span>
-    <a class="c-Input__button" href="javascript:;">変更</a>
+    <a class="c-Input__button" href="javascript:;">登録</a>
   </div><!-- /c-c-Input__footer -->
 </div><!-- /c-Input__inner -->
 </div><!-- /c-Input -->
