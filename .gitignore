@@ -4,3 +4,7 @@ node_modules
 .map
 package-lock.json
 yarn.lock
+npm-debug.log*
+
+# Editor directories and files
+.vscode
