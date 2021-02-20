@@ -1,0 +1,18 @@
+/* ---------------------------------- *\
+   #Like Button
+\* ---------------------------------- */
+
+.c-Like {
+  background: #ecf7ed;
+  border: 1px solid #37833b;
+  border-radius: 4px;
+  height: 1.8em;
+  color: #37833b;
+  align-self: flex-end;
+  margin-top: auto;
+  font-size: 12px;
+
+  .fa {
+    margin-right: 2px;
+  }
+}

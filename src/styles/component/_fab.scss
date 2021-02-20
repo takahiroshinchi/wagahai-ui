@@ -1,5 +1,5 @@
 /* ---------------------------------- *\
-   #FooterNavigation
+   #FAB
 \* ---------------------------------- */
 
 .c-FAB {
@@ -16,7 +16,6 @@
   }
 
   &__items {
-
   }
 
   &__item {
@@ -24,7 +23,7 @@
       display: block;
       padding: 10px 12px;
       background: #fff;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
       background: #2c5de5;
       line-height: 0;
       border-radius: 100%;

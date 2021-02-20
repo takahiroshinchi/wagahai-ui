@@ -675,7 +675,7 @@ template {
 }
 
 /* ---------------------------------- *\
-   #FooterNavigation
+   #FAB
 \* ---------------------------------- */
 .c-FAB {
   position: fixed;
@@ -860,6 +860,23 @@ template {
   outline: none;
   border: none;
   white-space: nowrap;
+}
+
+/* ---------------------------------- *\
+   #Like Button
+\* ---------------------------------- */
+.c-Like {
+  background: #ecf7ed;
+  border: 1px solid #37833b;
+  border-radius: 4px;
+  height: 1.8em;
+  color: #37833b;
+  align-self: flex-end;
+  margin-top: auto;
+  font-size: 12px;
+}
+.c-Like .fa {
+  margin-right: 2px;
 }
 
 /* ---------------------------------- *\
