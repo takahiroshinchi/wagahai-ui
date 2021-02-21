@@ -526,6 +526,28 @@ template {
   left: 10px;
   margin-top: -0.5em;
 }
+.c-Contents__headerButton {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+  padding: 8px 32px;
+  height: 100%;
+  text-align: center;
+  color: #fff;
+  font-weight: 700;
+  border: 1px solid #e2e2e2;
+  background: #1d5ac5;
+  box-shadow: -4px 0 4px rgba(55, 84, 170, 0.15);
+  -webkit-transition: box-shadow 0.2s ease-in-out;
+  transition: box-shadow 0.2s ease-in-out;
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+.c-Contents__headerButton:focus, .c-Contents__headerButton:hover {
+  color: black;
+}
 .c-Contents__body {
   padding-top: 20px;
 }
